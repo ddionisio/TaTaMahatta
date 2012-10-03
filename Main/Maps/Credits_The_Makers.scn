@@ -1,0 +1,84 @@
+// set the images
+image img_title ("Textures\Credits\credits_title.tga", 0.0859375, 0.2, 0.884375, 0.73125, 255, 255, 255, 255)
+
+image img_ddionisio ("Textures\Credits\david_dionisio.tga", 0.0953125, 0.097916667, 0.89375, 0.3625, 255, 255, 255, 255)
+
+image img_ddionisio_duties ("Textures\Credits\all_round_game_dev.tga", 0.0953125, 0.389583333, 0.89375, 0.920833333, 255, 255, 255, 255)
+
+image img_dclark ("Textures\Credits\david_clark.tga", 0.0953125, 0.191666667, 0.89375, 0.45625, 255, 255, 255, 255)
+
+image img_musician ("Textures\Credits\musician.tga", 0.0953125, 0.497916667, 0.89375, 0.7625, 255, 255, 255, 255)
+
+image img_ted ("Textures\Credits\ted.tga", 0.0953125, 0.097916667, 0.89375, 0.3625, 255, 255, 255, 255)
+
+image img_ted_duties ("Textures\Credits\ted_duties.tga", 0.0953125, 0.389583333, 0.89375, 0.920833333, 255, 255, 255, 255)
+
+image img_special_thanks ("Textures\Credits\special_thanks.tga", 0.0953125, 0.097916667, 0.89375, 0.3625, 255, 255, 255, 255)
+
+image img_family_friends ("Textures\Credits\family_n_friends.tga", 0.0953125, 0.389583333, 0.89375, 0.920833333, 255, 255, 255, 255)
+
+
+// loop forever!!!!
+
+while (1)
+{
+	wait (2000)
+
+	imagesetstatus (img_title, 1)
+
+	wait (3000)
+
+	imagesetstatus (img_title, 2)
+
+	wait (2000)
+
+	imagesetstatus (img_ddionisio, 1)
+
+	wait (2000)
+
+	imagesetstatus (img_ddionisio_duties, 1)
+
+	wait (4000)
+
+	imagesetstatus (img_ddionisio, 2)
+	imagesetstatus (img_ddionisio_duties, 2)
+
+	wait (2000)
+
+	imagesetstatus (img_dclark, 1)
+
+	wait (2000)
+
+	imagesetstatus (img_musician, 1)
+
+	wait (4000)
+
+	imagesetstatus (img_dclark, 2)
+	imagesetstatus (img_musician, 2)
+
+	wait (2000)
+
+	imagesetstatus (img_ted, 1)
+
+	wait (2000)
+
+	imagesetstatus (img_ted_duties, 1)
+
+	wait (4000)
+
+	imagesetstatus (img_ted, 2)
+	imagesetstatus (img_ted_duties, 2)
+
+	wait (2000)
+
+	imagesetstatus (img_special_thanks, 1)
+
+	wait (2000)
+
+	imagesetstatus (img_family_friends, 1)
+
+	wait (4000)
+
+	imagesetstatus (img_special_thanks, 2)
+	imagesetstatus (img_family_friends, 2)
+}

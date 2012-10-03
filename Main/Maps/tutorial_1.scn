@@ -1,0 +1,16 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+[btn_1_ON_begin]
+objectactivate ("gate_1", 1)
+[btn_1_ON_end]
+
+[falldown_begin]
+string entity
+triggergetentity (entity)
+creaturehit (entity, 1)
+creatureteleport (entity, "fall_respawn_tgt")
+[falldown_end]

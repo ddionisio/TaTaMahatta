@@ -1,0 +1,27 @@
+Team Digiballs:
+
+David Dionisio		Producer/Tech. Dir./Designer
+
+Producer Report for Jan. 27/02
+
+Completed Last Week: (Jan. 20 - Jan. 24)
+
+Performance Tuning
+Enhance Menu
+Forest Level One
+
+This Week To-Do: (Jan. 27 - Jan.31)
+
+Forest Level Two
+Forest Level Three
+Forest Level Four
+ShroomPa Boss
+
+Next Week Plan: (Feb.3 - Feb.7)
+
+Snow Levels
+Snow FX
+
+Summary:
+
+	Levels are hard to make and I'm hoping to complete one level set per week.  Plus art takes a while and will eat up most of my time.  The Boss should not be hard to code at all.

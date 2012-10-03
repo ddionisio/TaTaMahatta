@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EDFD00E4-86F0-4150-B2DA-285792BD92B3}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(DXSDK_DIR)\Include</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(DXSDK_DIR)\Include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(DXSDK_DIR)\Lib\x86</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(DXSDK_DIR)\Lib\x86</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/TATA_MAHATTA.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>david tools;source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/TATA_MAHATTA.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Debug/TATA_MAHATTA.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/TATA_MAHATTA.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/TATA_MAHATTA.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>david tools;source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/TATA_MAHATTA.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>.\Release/TATA_MAHATTA.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ProgramDatabaseFile>.\Release/TATA_MAHATTA.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\mywin.cpp" />
+    <ClCompile Include="Source\tata_destroy.cpp" />
+    <ClCompile Include="Source\tata_init.cpp" />
+    <ClCompile Include="Source\tata_main.cpp" />
+    <ClCompile Include="Source\tata_tool.cpp" />
+    <ClCompile Include="Source\proc_credits.cpp" />
+    <ClCompile Include="Source\proc_game.cpp" />
+    <ClCompile Include="Source\proc_intro.cpp" />
+    <ClCompile Include="Source\tata_basic.cpp" />
+    <ClCompile Include="Source\tata_bound.cpp" />
+    <ClCompile Include="Source\tata_collision.cpp" />
+    <ClCompile Include="Source\tata_error.cpp" />
+    <ClCompile Include="Source\tata_ID.cpp" />
+    <ClCompile Include="Source\tata_input.cpp" />
+    <ClCompile Include="Source\tata_proc.cpp" />
+    <ClCompile Include="Source\tata_sound.cpp" />
+    <ClCompile Include="Source\tata_stage_select.cpp" />
+    <ClCompile Include="Source\tata_view.cpp" />
+    <ClCompile Include="Source\tata_waypoint.cpp" />
+    <ClCompile Include="Source\tata_world.cpp" />
+    <ClCompile Include="Source\tata_world_ambientSound.cpp" />
+    <ClCompile Include="Source\tata_world_cutscene.cpp" />
+    <ClCompile Include="Source\tata_world_display.cpp" />
+    <ClCompile Include="Source\tata_world_HUD.cpp" />
+    <ClCompile Include="Source\tata_world_music.cpp" />
+    <ClCompile Include="Source\tata_world_profile.cpp" />
+    <ClCompile Include="Source\tata_world_target.cpp" />
+    <ClCompile Include="Source\tata_world_update.cpp" />
+    <ClCompile Include="Source\tata_world_load.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_block.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_button.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_enemy.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_gas.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_item.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_lever.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_light.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_misc.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_platform.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_sign.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_start.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_steak.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_tata.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_trigger.cpp" />
+    <ClCompile Include="Source\tata_world_load_entity_waypoint.cpp" />
+    <ClCompile Include="Source\tata_creature.cpp" />
+    <ClCompile Include="Source\tata_creature_status.cpp" />
+    <ClCompile Include="Source\creature_BabyTaTa.cpp" />
+    <ClCompile Include="Source\creature_CaptainTaTa.cpp" />
+    <ClCompile Include="Source\creature_ChiTa.cpp" />
+    <ClCompile Include="Source\creature_FrostTa.cpp" />
+    <ClCompile Include="Source\creature_HopTaHop.cpp" />
+    <ClCompile Include="Source\creature_KeyKeyTa.cpp" />
+    <ClCompile Include="Source\creature_LoopTaLoop.cpp" />
+    <ClCompile Include="Source\creature_ParaTaTa.cpp" />
+    <ClCompile Include="Source\creature_TaTaTrample.cpp" />
+    <ClCompile Include="Source\creature_TaTaTug.cpp" />
+    <ClCompile Include="Source\creature_TaVatar.cpp" />
+    <ClCompile Include="Source\creature_TinkerTa.cpp" />
+    <ClCompile Include="Source\boss_CatterShroom.cpp" />
+    <ClCompile Include="Source\boss_CorrupTa.cpp" />
+    <ClCompile Include="Source\boss_ShroomPa.cpp" />
+    <ClCompile Include="Source\creature_FungaBark.cpp" />
+    <ClCompile Include="Source\creature_FungaMusketeer.cpp" />
+    <ClCompile Include="Source\creature_FungaSmug.cpp" />
+    <ClCompile Include="Source\creature_FungaSpy.cpp" />
+    <ClCompile Include="Source\creature_ShroomGuard.cpp" />
+    <ClCompile Include="Source\creature_ShroomShooter.cpp" />
+    <ClCompile Include="Source\object_block.cpp" />
+    <ClCompile Include="Source\object_button.cpp" />
+    <ClCompile Include="Source\object_doodad.cpp" />
+    <ClCompile Include="Source\object_geyser.cpp" />
+    <ClCompile Include="Source\object_goal.cpp" />
+    <ClCompile Include="Source\object_lever.cpp" />
+    <ClCompile Include="Source\object_lightningarea.cpp" />
+    <ClCompile Include="Source\object_ouchfield.cpp" />
+    <ClCompile Include="Source\object_platform.cpp" />
+    <ClCompile Include="Source\object_sign.cpp" />
+    <ClCompile Include="Source\object_steak.cpp" />
+    <ClCompile Include="Source\object_teleport.cpp" />
+    <ClCompile Include="Source\object_trigger.cpp" />
+    <ClCompile Include="Source\object_turret.cpp" />
+    <ClCompile Include="Source\tata_object.cpp" />
+    <ClCompile Include="Source\projectile_attackmelee.cpp" />
+    <ClCompile Include="Source\projectile_frost.cpp" />
+    <ClCompile Include="Source\projectile_gas.cpp" />
+    <ClCompile Include="Source\projectile_openmelee.cpp" />
+    <ClCompile Include="Source\projectile_pullpower.cpp" />
+    <ClCompile Include="Source\projectile_pushmelee.cpp" />
+    <ClCompile Include="Source\projectile_scanner.cpp" />
+    <ClCompile Include="Source\projectile_spike.cpp" />
+    <ClCompile Include="Source\projectile_spit.cpp" />
+    <ClCompile Include="Source\projectile_teleport.cpp" />
+    <ClCompile Include="Source\projectile_usemelee.cpp" />
+    <ClCompile Include="Source\projectile_whip.cpp" />
+    <ClCompile Include="Source\tata_projectile.cpp" />
+    <ClCompile Include="Source\tata_item.cpp" />
+    <ClCompile Include="Source\script_creature.cpp" />
+    <ClCompile Include="Source\script_dialog.cpp" />
+    <ClCompile Include="Source\script_entity.cpp" />
+    <ClCompile Include="Source\script_image.cpp" />
+    <ClCompile Include="Source\script_object.cpp" />
+    <ClCompile Include="Source\script_target.cpp" />
+    <ClCompile Include="Source\script_tata.cpp" />
+    <ClCompile Include="Source\script_vector.cpp" />
+    <ClCompile Include="Source\script_view.cpp" />
+    <ClCompile Include="Source\script_world.cpp" />
+    <ClCompile Include="Source\tata_script_query.cpp" />
+    <ClCompile Include="Source\tata_menu.cpp" />
+    <ClCompile Include="Source\tata_menu_cursor.cpp" />
+    <ClCompile Include="Source\tata_menu_game.cpp" />
+    <ClCompile Include="Source\menu_item_button2D.cpp" />
+    <ClCompile Include="Source\menu_item_button3D.cpp" />
+    <ClCompile Include="Source\menu_item_buttonText.cpp" />
+    <ClCompile Include="Source\tata_menu_item.cpp" />
+    <ClCompile Include="Source\menu_callback_exit.cpp" />
+    <ClCompile Include="Source\menu_callback_gameover.cpp" />
+    <ClCompile Include="Source\menu_callback_jstick_cfg.cpp" />
+    <ClCompile Include="Source\menu_callback_kb_cfg.cpp" />
+    <ClCompile Include="Source\menu_callback_levelselect.cpp" />
+    <ClCompile Include="Source\menu_callback_levelstart.cpp" />
+    <ClCompile Include="Source\menu_callback_load.cpp" />
+    <ClCompile Include="Source\menu_callback_mainmenu.cpp" />
+    <ClCompile Include="Source\menu_callback_new.cpp" />
+    <ClCompile Include="Source\menu_callback_pause.cpp" />
+    <ClCompile Include="Source\menu_callback_pause_ingame.cpp" />
+    <ClCompile Include="Source\menu_callback_victory.cpp" />
+    <ClCompile Include="Source\menu_callback_playtutorial.cpp" />
+    <ClCompile Include="Source\menu_callback_options.cpp" />
+    <ClCompile Include="Source\menu_callback_options_audio.cpp" />
+    <ClCompile Include="Source\menu_callback_options_gfx.cpp" />
+    <ClCompile Include="Source\menu_callback_options_input.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\bass.h" />
+    <ClInclude Include="david tools\common.h" />
+    <ClInclude Include="Source\mywin.h" />
+    <ClInclude Include="Source\resource.h" />
+    <ClInclude Include="Source\tata_basic.h" />
+    <ClInclude Include="Source\tata_bound.h" />
+    <ClInclude Include="Source\tata_collision.h" />
+    <ClInclude Include="Source\tata_entityparse.h" />
+    <ClInclude Include="Source\tata_globals.h" />
+    <ClInclude Include="Source\tata_ID.h" />
+    <ClInclude Include="Source\tata_item.h" />
+    <ClInclude Include="Source\tata_main.h" />
+    <ClInclude Include="Source\tata_object.h" />
+    <ClInclude Include="Source\tata_object_common.h" />
+    <ClInclude Include="Source\tata_projectiles.h" />
+    <ClInclude Include="Source\tata_projectiles_common.h" />
+    <ClInclude Include="Source\tata_script.h" />
+    <ClInclude Include="Source\tata_sound.h" />
+    <ClInclude Include="Source\tata_stage_select.h" />
+    <ClInclude Include="Source\tata_types.h" />
+    <ClInclude Include="Source\tata_view.h" />
+    <ClInclude Include="Source\tata_waypoint.h" />
+    <ClInclude Include="Source\tata_world.h" />
+    <ClInclude Include="Source\tata_menu.h" />
+    <ClInclude Include="Source\tata_menu_cursor.h" />
+    <ClInclude Include="Source\tata_menu_game.h" />
+    <ClInclude Include="Source\tata_menu_item.h" />
+    <ClInclude Include="Source\tata_menu_item_common.h" />
+    <ClInclude Include="Source\tata_menu_options.h" />
+    <ClInclude Include="Source\tata_creature.h" />
+    <ClInclude Include="Source\tata_creature_enemy.h" />
+    <ClInclude Include="Source\tata_creature_status.h" />
+    <ClInclude Include="Source\tata_creature_tata.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="bass.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\tata_win_resource.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Source</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Source</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\tataicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="david tools\graphicsX\graphicsX.vcxproj">
+      <Project>{52eff7ec-d89a-4a05-a15f-c7c080294950}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="david tools\InputX\InputX.vcxproj">
+      <Project>{249d3e33-e25a-4ba1-b640-3eceb22a51d2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="david tools\Parser\Parser.vcxproj">
+      <Project>{55b32387-0eda-4b7c-b21b-fb4a3379577e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="david tools\ScriptTease\ScriptTease.vcxproj">
+      <Project>{1a79be5c-d09b-4175-aed9-b2a59178480b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="david tools\TIMER\timer.vcxproj">
+      <Project>{470da1b2-d3f0-4e3d-b4ba-7812c1180ca1}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

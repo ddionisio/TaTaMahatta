@@ -1,0 +1,2 @@
+int isBackward=0
+int isActive=1

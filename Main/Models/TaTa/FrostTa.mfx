@@ -1,0 +1,11 @@
+[freeze_gun]
+{
+render_22=1;
+textureimg_1="CaptainTaTa_txt_shiny.jpg";
+texture_1_11=65536
+}
+[backpack]
+{
+textureimg_1="CaptainTaTa_txt_shiny.jpg";
+texture_1_11=65536
+}

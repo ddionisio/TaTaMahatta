@@ -1,0 +1,34 @@
+Team Digiballs:
+
+David Dionisio		Producer/Tech. Dir./Designer
+
+Producer Report for Dec. 2/02
+
+Completed Last Week: (Nov. 26 - Nov. 31)
+
+fixed Options Menu
+Changed Shroom Shooter Model
+Changed Shroom Guard Model
+Tested on 3 machines, worked great.
+
+This Week To-Do: (Dec. 1 - Dec.6)
+
+3 Forest Level (maybe)
+Forest Boss (maybe)
+Fix some issues: respawn Baby-Tata after the carrier dies
+Better Level Select
+Ar-Ta-Fact Museum
+One mini-Game (Pong-Ta)
+some sort of intro
+Testing (if forest levels are done)
+shadow
+
+Next Week Plan: (Dec. 9 - Dec.15)
+
+Testing
+Finish up whatever is left unfinish.
+
+Summary:
+
+	It doesn't matter what I do for the rest of the week, the game is complete for this semester.  All there is left is to see if this game truly is fun, I'm not concerned about the forest levels, unless the tutorial levels are too few to show the potentials of this game.  That will depend on tester feedbacks.  I will only create the forest levels if the testers find the game fun, otherwise I'm just gonna have to think of new designs for next semester.  The rest is just finishing off all the major coding this semester which is very close to done.  
+	I've removed all that is of Dimitry's work, he's now just a pebble at the bottom of my dark murky pool of memory...almost non existent.  Well, there is nothing left to report.

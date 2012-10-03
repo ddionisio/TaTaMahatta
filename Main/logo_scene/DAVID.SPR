@@ -1,0 +1,10 @@
+framesize x=64 y=64
+aniDelay=120
+numFrames=16
+numStates=6
+State first=0 last=3
+State first=4 last=4
+State first=5 last=5
+State first=6 last=7
+State first=8 last=11
+State first=12 last=12

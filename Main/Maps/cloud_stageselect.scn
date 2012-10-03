@@ -1,0 +1,37 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// *****************************************
+// Trigger Scripts
+// *****************************************
+[CloudBack_begin]
+maploadcloud ("cloud_entry", 180, 1)
+[CloudBack_end]
+
+[StageTutorial_begin]
+setstagelevel (0, -1)
+menuactivate ("menu_level_select")
+[StageTutorial_end]
+
+[StageForest_begin]
+setstagelevel (1, -1)
+menuactivate ("menu_level_select")
+[StageForest_end]
+
+[StageIce_begin]
+setstagelevel (2, -1)
+menuactivate ("menu_level_select")
+[StageIce_end]
+
+[StageCliff_begin]
+setstagelevel (3, -1)
+menuactivate ("menu_level_select")
+[StageCliff_end]
+
+[StageSwamp_begin]
+setstagelevel (4, -1)
+menuactivate ("menu_level_select")
+[StageSwamp_end]

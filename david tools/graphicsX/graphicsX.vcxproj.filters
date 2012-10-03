@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{34324ff4-2a23-4ed0-bc69-d580e0a2af3e}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ParticleFX">
+      <UniqueIdentifier>{3f8c59c5-6298-46dc-8464-128c801776de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{c4fff907-f20e-4af0-873f-2b1d85cae205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Object">
+      <UniqueIdentifier>{c57e9543-5a24-45a8-9bad-a6399f8e434c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Map">
+      <UniqueIdentifier>{99e72467-5f77-4f76-994f-21f0974767aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Texture">
+      <UniqueIdentifier>{f71de389-2077-4f45-b6b1-3a160d606cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6516df1b-207d-4418-a1e0-ed34c444b181}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\qbsp">
+      <UniqueIdentifier>{b289a14b-78df-4e48-a655-acad612be1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="d3dstuff">
+      <UniqueIdentifier>{db4d9bc9-4030-4d3e-abf5-b6c066c28bec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GFX_BkgrndFX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_ErrorCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Fog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Frustrum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Math.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Pager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Primitives.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_SkyBox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_ParticleFX.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_3DExplode.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_expand.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_explode.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_gas.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_gather.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_glow.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_lightningY.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_puff.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="PARFX_smoke.cpp">
+      <Filter>Source Files\ParticleFX</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_joints.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_mesh.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Model.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_ModelFX.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_ModelGenMap.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_ModelLoad_MD2.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_ModelLoad_MS3D.cpp">
+      <Filter>Source Files\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Object.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_ObjectLoad.cpp">
+      <Filter>Source Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Map.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_MapGenMidptFrac.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_QBSPCollision.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_QBSPDestroy.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_QBSPLoad.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_QBSPModel.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_QBSPRender.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_QBSPTool.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_QBSPVisBit.cpp">
+      <Filter>Source Files\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Surface.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_Texture.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="GFX_TextureDisplay.cpp">
+      <Filter>Source Files\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dstuff\d3dfont.cpp">
+      <Filter>d3dstuff</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dstuff\d3dutil.cpp">
+      <Filter>d3dstuff</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dstuff\ddutil.cpp">
+      <Filter>d3dstuff</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dstuff\dxutil.cpp">
+      <Filter>d3dstuff</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gdiX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_bkgrndFX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdix_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_joints_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_mesh_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_modelFX_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_particleFX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_particleFX_i.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_qbsp_flags.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdiX_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="normTbl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gdix_qbsp.h">
+      <Filter>Header Files\qbsp</Filter>
+    </ClInclude>
+    <ClInclude Include="gdix_qbsp_i.h">
+      <Filter>Header Files\qbsp</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dstuff\d3dfont.h">
+      <Filter>d3dstuff</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dstuff\dxutil.h">
+      <Filter>d3dstuff</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

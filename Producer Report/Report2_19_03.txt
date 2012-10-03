@@ -1,0 +1,28 @@
+Team RenegadeWare:
+
+David Dionisio		Producer/Tech. Dir./Designer
+
+Producer Report for Feb. 19/03
+
+Completed Last Week: (Feb. 10 - Feb. 14)
+
+Tutorial
+Cutscene Engine
+Better Menus
+Fixed Levels (Cloud-Forest)
+
+This Week To-Do: (Feb. 17 - Feb. 21)
+
+Skyboxes for cloud, forest, ice
+Ice Levels
+Fungi Musketeer
+
+Next Week Plan: (Feb.24 - Feb. 27)
+
+Ice Levels
+Cliff Textures
+
+
+Summary:
+
+	Programming aspect is almost complete, just need to add a few more enemies and the bosses.  Almost halfway through making the levels.  By end of February, I'll be halfway through.

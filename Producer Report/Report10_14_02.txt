@@ -1,0 +1,51 @@
+Team 2D:				Oct 14,02
+			title
+David Dionisio		Producer/Tech Director
+Dimitry Kudlay		Designer/Production Manager.
+
+Completed Last Week:
+
+Dimitry:
+	completed cloud level
+	completed half character animations
+	finished final draft of menu system
+
+David: Ta-Ta moving around in some test level.  Platform sort
+	of working (good enough for now).  Pushing button works.
+	Collision for all objects working perfectly (nothing gets
+	stuck...so far).  Ta-Ta Tug animation done.  TDD completed.
+
+This Week Goals: 
+
+Dimitry: Complete 1 character animation sets.
+	 integrate menus into main game module.
+
+David:  (DONE)  Ta-Ta Tug functionality. 
+	(DONE)  Tinker Ta animation 
+	(DONE)	Tinker Ta functionality.
+	(DONE)	Ta-Ta Trample animation 
+	(DONE)	Ta-Ta Trample functionality.  
+
+		All other level objects: 
+	(DONE)	levers, 
+		signs, 
+		steak 
+		and door.  
+		Integrate main menu
+		and cloud level.  
+
+	(DONE)	HUD!!!  
+		Ouch and Death.
+
+
+Next Week Plans:
+
+Dimitry:	Finish menus
+		Complete 1 animation set.
+
+David: Shroom Shooter functionality.
+	Funga Bark animation and functionality.
+	Shroom Guard functionality.
+	Resource gathering (items and such).
+	Level 1 complete and integrated to game.
+	Shroom-Pa animation and functionality.

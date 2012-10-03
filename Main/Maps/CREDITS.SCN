@@ -1,0 +1,26 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// *****************************************
+// Intro Script
+// *****************************************
+[Intro_begin]
+
+viewsetdelay (500)
+
+vector3 loc
+targetget ("cam_loc_start", loc)
+viewsetloc (loc)
+targetget ("cam_tgt_start", loc)
+viewsettarget (loc)
+
+int isDone (0)
+
+while (1) // while (isDone == 1)
+{
+	viewfollowwaypoint ("intro_wp", 1, 3000, isDone)
+}
+[Intro_end]

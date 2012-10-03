@@ -1,0 +1,386 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+// display the gate activation
+setworldscene ("scene_btn_1")
+[button_1_end]
+
+[button_2_begin]
+// display the gate activation
+setworldscene ("scene_btn_2")
+[button_2_end]
+
+[button_3_begin]
+// display the glorious freedom of KeyKeyTa
+setworldscene ("scene_btn_3")
+[button_3_end]
+
+[button_4_begin]
+// destroy the two shroom guards
+setworldscene ("scene_btn_4")
+[button_4_end]
+
+[button_5_begin]
+// activate white tata prison gate 1
+// then play scene if gate 2 is also open
+
+objectactivate ("gate_1", 1)
+
+int isActive
+
+objectisactive ("gate_2", isActive)
+
+if (isActive == 1)
+{
+	setworldscene ("scene_tavatar_free")
+}
+
+[button_5_end]
+
+[button_6_begin]
+// activate white tata prison gate 2
+// then play scene if gate 1 is also open
+
+objectactivate ("gate_2", 1)
+
+int isActive
+
+objectisactive ("gate_1", isActive)
+
+if (isActive == 1)
+{
+	setworldscene ("scene_tavatar_free")
+}
+
+[button_6_end]
+
+[button_7_begin]
+objectactivate ("platform_6", 1)
+[button_7_end]
+
+[button_8_begin]
+// first, set the platform's waypoint 
+// (this is one way to reset the movement)
+entitysetwp ("platform_7", "platform_7_wp", "stopatend", 0)
+
+// activate the object if not yet done
+objectactivate ("platform_7", 1)
+[button_8_end]
+
+[button_9_begin]
+objectactivate ("platform_8", 1)
+[button_9_end]
+
+[button_10_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_9", isActive)
+platformiswpbackward ("platform_9", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_9", 0)
+	objectactivate ("platform_9", 1)
+}
+else
+{
+	platformwpbackward ("platform_9", 1)
+}
+[button_10_end]
+
+// 
+// Triggers
+// 
+[trigger_keykeyta_begin]
+// display keykeyta's dismay
+setworldscene ("scene_keykeyta_dismay")
+[trigger_keykeyta_end]
+
+// 
+// Scenes
+// 
+
+[scene_btn_1_begin]
+vector3 tgt
+
+targetget ("cam_loc_1", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_1", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("platform_1", 1)
+
+wait (3000)
+[scene_btn_1_end]
+
+[scene_btn_2_begin]
+vector3 tgt
+
+targetget ("cam_loc_1", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_1", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("platform_2", 1)
+
+wait (3000)
+[scene_btn_2_end]
+
+[scene_keykeyta_dismay_begin]
+vector3 tgt
+
+targetget ("cam_loc_2", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_2", tgt)
+viewsettarget (tgt)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	viewfollowwaypoint ("keykeyta_cam_wp", 0, 1500, isDone)
+}
+
+// conversation
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.3796875, 0.352083333, 0.95, 0.764583333)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display keykey-ta's portrait
+image img_1 ("Textures\Portraits\KeyKeyTa_port.jpg", 0.5546875, 0.05, 0.753125, 0.314583333, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// KeyKey-Ta's introduction
+dialogsettext (dlg_1, "Hey Ta, What's up?")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "You gots to get me out of here yo!  My homies are waiting for me back at the crib!")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "So you gots to open up this gate, ya hear?")
+waitbtn (3000)
+
+imagesetstatus (img_1, 0)
+
+dialogopen (dlg_1, 0)
+[scene_keykeyta_dismay_end]
+
+[scene_btn_3_begin]
+// key key ta is free!
+vector3 tgt
+
+targetget ("cam_loc_3", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_keykeyta_tgt_2", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("platform_3", 1)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.3796875, 0.352083333, 0.95, 0.764583333)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display keykey-ta's portrait
+image img_1 ("Textures\Portraits\KeyKeyTa_port.jpg", 0.5546875, 0.05, 0.753125, 0.314583333, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// KeyKey-Ta is free!
+dialogsettext (dlg_1, "Sweet Ta-Ta, I'm free!  Thanks Ta!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "These Fungi fools, they be messin' with the hood!  Let me join ya, Ta!  We be kickin these fungi off the street, yo!")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "So you be looking for this Legendary White Ta-Ta?")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "Well, he be chillin' out here with the little Ta-Tas.  I be helpin ya find this Ta-Ta.  Let's go Ta.")
+waitbtn (4000)
+
+imagesetstatus (img_1, 2)
+
+dialogsettext (dlg_1, "KeyKey-Ta has several abilities at your disposal.")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "KeyKey-Ta's sweat jacket has the ability to blend with the environment.  The enemies will ignore KeyKey-Ta if he stands still.")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "KeyKey-Ta is a thief among the land of Ta-Ta.  No locked doors can block KeyKey-Ta's path.  Move towards any locked doors to open them.")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "KeyKey-Ta's last skill is wall climbing.  Hold the 'Action' button and move towards a wall to climb it.  Release the 'Action' button to stop climbing.")
+waitbtn (4000)
+
+dialogopen (dlg_1, 0)
+
+tataaddtoplaylist ("KeyKeyTa")
+[scene_btn_3_end]
+
+[scene_btn_4_begin]
+vector3 tgt
+
+targetget ("cam_loc_4", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_4", tgt)
+viewmovetarget (tgt)
+
+wait (1000)
+
+// initialize 2 dialogs
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.0796875, 0.0875, 0.43125, 0.4)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 197, 237, 197)
+
+// start the talk with dude 1
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "Man, this job blows! All we do is stand here and guard this stupid door.")
+waitbtn (3000)
+
+dialog dlg_2 ("Textures\Misc\purple_box.tga", 0.5421875, 0.0875, 0.890625, 0.4)
+
+dialogsetfont (dlg_2, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_2, 197, 237, 197)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "Hey man, I heard there's this academy for making real time interactive simulations!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Sweet dude...But that sounds kinda stupid...")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "and I see no importance in making 'virtual worlds', why not just go out and have fun?")
+waitbtn (3000)
+
+dialogsettext (dlg_2, "Who cares, chicks dig interactive simulations! That's what matters, man!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Heehee! We're there dude!")
+waitbtn (3000)
+
+dialogsettext (dlg_2, "We're gonna score! Uhuhuhuh-huhuhuh!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Yeah! Hehehehe-hrm-hehe")
+waitbtn (3000)
+
+objectactivate ("boulder", 1)
+
+dialogsettext (dlg_2, "Awww, MAN! THAT HURTS! Who activated this stupid boulder!?")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "Yeah man, that really hurts!")
+waitbtn (1000)
+
+dialogsettext (dlg_2, "Dude, I'm DEAD! *gasp*")
+waitbtn (1000)
+
+dialogsettext (dlg_1, "yeah man, me too! *gasp*")
+waitbtn (1000)
+
+dialogopen (dlg_1, 0)
+dialogopen (dlg_2, 0)
+
+creaturehit ("dude_1", 3)
+creaturehit ("dude_2", 3)
+
+wait(500)
+
+entitypolldeath ("boulder")
+
+[scene_btn_4_end]
+
+[scene_tavatar_free_begin]
+vector3 tgt
+
+targetget ("cam_loc_5", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_5", tgt)
+viewmovetarget (tgt)
+
+wait (1000)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.5, 0.395833333, 0.9328125, 0.735416667)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display ta-vatar's portrait
+image img_1 ("Textures\Portraits\TaVatar_port.jpg", 0.60625, 0.097916667, 0.8046875, 0.3625, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// Ta-Vatar is free!
+dialogsettext (dlg_1, "By the great TikiTa, I am free! Thank you Ta-Tas for my freedom!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "I have realized that my powers alone cannot stop the Fungi infestation...")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "We must hurry and destroy the master of the Fungi Colony!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "But before we take our leave, we must rescue the little Ta-Tas.")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "They are not far from here...I can sense their presence...")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Let us go my fellow Ta-Tas, time is of the essence!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+dialogsettext (dlg_1, "The legendary White Ta-Ta, Ta-Vatar is now yours to control!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "Ta-Vatar is the only known Ta-Ta who can perform the ultimate move: TA-TA MAHATTA")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Hold the 'Action' button to charge Ta-Vatar's powers and release the button to fire TA-TA MAHATTA!")
+waitbtn (3000)
+
+dialogopen (dlg_1, 0)
+
+tataaddtoplaylist ("TaVatar")
+[scene_tavatar_free_end]

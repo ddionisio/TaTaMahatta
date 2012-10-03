@@ -1,0 +1,54 @@
+Team 2D:				Oct 21,02
+			title
+David Dionisio		Producer/Tech Director
+Dimitry Kudlay		Designer/Production Manager.
+
+Completed Last Week:
+
+Dimitry:
+
+David:  (DONE)  Ta-Ta Tug functionality. 
+	(DONE)  Tinker Ta animation 
+	(DONE)	Tinker Ta functionality.
+	(DONE)	Ta-Ta Trample animation 
+	(DONE)	Ta-Ta Trample functionality.  
+
+		All other level objects: 
+	(DONE)	levers
+
+	(DONE)	HUD!!!  
+	(DONE)  Funga Bark animation
+
+This Week Goals: 
+
+Dimitry:
+
+David:  	All other level objects: 
+	(DONE)	signs, 
+		steak 
+	(DONE)	and door.  
+	
+		Integrate main menu and cloud level.
+	(DONE)	Ouch and Death.
+	(DONE)	Shroom Shooter functionality.
+	(DONE)	Funga Bark functionality.
+	(DONE)	Shroom Guard functionality.
+	(DONE)	Resource gathering (items and such).
+		Level 1 complete and integrated to game.
+	(DONE)	Shroom-Pa animation.
+		Shroom-Pa functionality.
+
+
+Next Week Plans:
+
+Dimitry:
+
+David:  	Funga-Spy animation
+	(DONE)	Funga-Spy functionality.
+	(DONE)	Hop-Ta-Hop animation 
+		Hop-Ta-Hop functionality.
+		Para-Ta-Ta animation 
+		Para-Ta-Ta functionality.
+		Integrate level 2 to game.
+		Mushroom Warlord complete.
+

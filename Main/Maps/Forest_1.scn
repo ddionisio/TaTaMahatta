@@ -1,0 +1,113 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// //////////////////////////////
+// Levers
+[lever_1_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_1", isActive)
+platformiswpbackward ("platform_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_1", 0)
+	objectactivate ("platform_1", 1)
+}
+else
+{
+	platformwpbackward ("platform_1", 1)
+}
+[lever_1_end]
+
+[lever_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+[lever_2_end]
+
+[lever_3_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_3", isActive)
+platformiswpbackward ("platform_3", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_3", 0)
+	objectactivate ("platform_3", 1)
+}
+else
+{
+	platformwpbackward ("platform_3", 1)
+}
+[lever_3_end]
+
+[lever_4_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_4", isActive)
+platformiswpbackward ("platform_4", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_4", 0)
+	objectactivate ("platform_4", 1)
+}
+else
+{
+	platformwpbackward ("platform_4", 1)
+}
+[lever_4_end]
+
+[lever_5_begin]
+objectactivate ("prison_door", 1)
+tataaddtoplaylist ("HopTaHop")
+[lever_5_end]
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_5", isActive)
+platformiswpbackward ("platform_5", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_5", 0)
+	objectactivate ("platform_5", 1)
+}
+else
+{
+	platformwpbackward ("platform_5", 1)
+}
+[button_1_end]
+
+[falldown_begin]
+string entity
+triggergetentity (entity)
+creaturehit (entity, 1)
+creatureteleport (entity, "fall_respawn_tgt")
+[falldown_end]

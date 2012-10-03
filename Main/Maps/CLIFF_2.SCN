@@ -1,0 +1,62 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// 
+// Triggers
+// 
+
+[trigger_1_begin]
+setworldscene ("scene_cattershroom")
+[trigger_1_end]
+
+// 
+// Scenes
+// 
+
+[scene_cattershroom_begin]
+
+vector3 tgt
+
+targetget ("cam_loc_boss", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_boss", tgt)
+viewsettarget (tgt)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	viewfollowwaypoint ("cam_wp_boss", 0, 1500, isDone)
+}
+
+wait (1000)
+
+targetget ("cam_loc_boss_2", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_boss_2", tgt)
+viewmovetarget (tgt)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.46875, 0.352083333, 0.9640625, 0.74375)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+dialogopen (dlg_1, 1)
+
+// information about shroom-pa
+
+dialogsettext (dlg_1, "The big fat abominable Catter-Shroom stares with hunger and destruction...It desires Ta-Ta meat!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Catter-Shroom is protected with Fire Force Field and bad odor.  Only when the Fire Force Field is down can Catter-Shroom be harmed.")
+waitbtn (4000)
+
+dialogopen (dlg_1, 0)
+
+[scene_cattershroom_end]

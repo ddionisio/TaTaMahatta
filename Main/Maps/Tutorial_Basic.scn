@@ -1,0 +1,458 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+[intro_begin]
+viewsetdelay (500)
+
+vector3 camLoc
+targetget ("intro_start", camLoc)
+viewsetloc (camLoc)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	viewfollowwaypoint ("intro_wp", 0, 4500, isDone)
+}
+
+wait (1000)
+
+entitysetobjstate ("GreenPlebe", 1)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.4171875, 0.14375, 0.9640625, 0.629166667)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+dialogopen (dlg_1, 1)
+
+// green plebe says hello
+
+dialogsettext (dlg_1, "Ola! I am Green Plebe.  I'm ah gonna teach you the basics of playing Ta-Ta Mahatta.")
+waitbtn (5000)
+
+// start talking about the HUD
+
+entitysetobjstate ("GreenPlebe", 3)
+dialogsettext (dlg_1, "First, let us start with the Status Display.  This is located at the bottom of the screen.  See?")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "The highlighted Ta-Ta is the current Ta-Ta you control.  You currently have only one Ta-Ta, we will worry about multiple Ta-Tas later in this tutorial.")
+waitbtn (5000)
+
+dialogopen (dlg_1, 0)
+
+wait (2000)
+
+// display Health Points HUD description
+image img_1 ("Textures\Misc\textbox_HPDesc.jpg", 0.4171875, 0.14375, 0.815625, 0.675, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+// /////////////////////////////////////
+// check this out
+
+// set green plebe to look a bit right
+entitysetdir ("GreenPlebe", "gp_look_right_tgt")
+
+dialog dlg_2 ("Textures\Misc\purple_box.tga", 0.0609375, 0.0875, 0.3734375, 0.247916667)
+
+dialogsetfont (dlg_2, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_2, 232, 197, 237)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "Check This Out")
+
+waitbtn (15000)
+
+// close and return looking at player
+dialogopen (dlg_2, 0)
+imagesetstatus (img_1, 2)
+
+entitysetdir ("GreenPlebe", "gp_look_player_tgt")
+// /////////////////////////////////////
+
+// Talk about gameover
+dialogopen (dlg_1, 1)
+
+entitysetobjstate ("GreenPlebe", 2)
+dialogsettext (dlg_1, "A Ta-Ta will vanish if all health points are lost!  The game is over when all Ta-Tas vanish!  So please do take care of these fragile little creatures!")
+waitbtn (6000)
+
+// talk about the goal
+
+entitysetobjstate ("GreenPlebe", 6)
+dialogsettext (dlg_1, "Now about the goal!")
+waitbtn (4000)
+
+entitysetobjstate ("GreenPlebe", 3)
+dialogsettext (dlg_1, "The goal is displayed at the bottom-right of the screen.")
+waitbtn (6000)
+
+entitysetobjstate ("GreenPlebe", 0)
+
+// show goal image
+
+dialogopen (dlg_1, 0)
+
+wait (2000)
+
+// display Goal description
+img_1 ("Textures\Misc\textbox_GoalDesc.jpg", 0.4171875, 0.14375, 0.815625, 0.675, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+// /////////////////////////////////////
+// check this out
+
+// set green plebe to look a bit right
+entitysetdir ("GreenPlebe", "gp_look_right_tgt")
+
+dialog dlg_2 ("Textures\Misc\purple_box.tga", 0.0609375, 0.0875, 0.3734375, 0.247916667)
+
+dialogsetfont (dlg_2, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_2, 232, 197, 237)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "Check This Out")
+
+waitbtn (15000)
+
+// close and return looking at player
+dialogopen (dlg_2, 0)
+imagesetstatus (img_1, 2)
+
+entitysetdir ("GreenPlebe", "gp_look_player_tgt")
+// /////////////////////////////////////
+
+// Talk about victory and goal types
+dialogopen (dlg_1, 1)
+
+entitysetobjstate ("GreenPlebe", 2)
+dialogsettext (dlg_1, "In order to achieve victory in a level, you must reach the maximum required goal!")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "There are several different types of goal.  In this tutorial, you must get this Ta-Ta home!")
+waitbtn (5000)
+
+// Talk about movements
+
+entitysetobjstate ("GreenPlebe", 1)
+dialogsettext (dlg_1, "That's all there is to know about Status Display!")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "Now let's talk about controlling Ta-Tas.")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 7)
+dialogsettext (dlg_1, "Pressing the right button rotates the Ta-Ta clockwise...Like this!  Default Keyboard: arrow right.  Gamepad: right")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 8)
+dialogsettext (dlg_1, "Pressing the left button rotates the Ta-Ta counter-clockwise...Like this!  Default Keyboard: arrow left.  Gamepad: left")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 9)
+entitysetdir ("GreenPlebe", "gp_look_back_tgt")
+dialogsettext (dlg_1, "Pressing the up button moves the Ta-Ta forward...Like this!  Default Keyboard: arrow up.  Gamepad: up")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 9)
+entitysetdir ("GreenPlebe", "gp_look_back_tgt")
+dialogsettext (dlg_1, "To run, you have to tap the up button and then hold it. So tap once and then press and hold to run.")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 9)
+entitysetdir ("GreenPlebe", "gp_look_player_tgt")
+dialogsettext (dlg_1, "Pressing the down button moves the Ta-Ta backward...Like this!  Default Keyboard: arrow down.  Gamepad: down")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 6)
+dialogsettext (dlg_1, "Pressing the action button activates the Ta-Ta's special ability!  Default Keyboard: Z.  Gamepad: button 0")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 9)
+dialogsettext (dlg_1, "Hold the strafe key and then press left/right button to strafe left/right.  Default Keyboard: C.  Gamepad: button 2")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "Each Ta-Ta has its own unique ability.  Use and combine their ability to solve the various puzzles found throughout Ta-Ta Mahatta!")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 10)
+dialogsettext (dlg_1, "Hold the Look-At button to orbit around the Ta-Ta.  Use this to look ahead for obstacles and danger.  Default Keyoard: X.  Gamepad: button 1")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 1)
+dialogsettext (dlg_1, "That's all there is to know about controlling Ta-Tas!")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "Come my friend, let me take you further to enlightment!  You now have full control of the Ta-Ta.  Follow me!")
+waitbtn (6000)
+
+dialogopen (dlg_1, 0)
+
+waitbtn (1500)
+
+// move plebe to button area
+entitysetwp ("GreenPlebe", "plebe_wp_1", "stopatend", 0)
+
+[intro_end]
+
+[tutor_2_s_begin]
+vector3 tgt
+
+targetget ("cam_loc_btn_tgt", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_btn_tgt", tgt)
+viewmovetarget (tgt)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	EntityIsWPDone("GreenPlebe", isDone)
+}
+
+entitysetobjstate ("GreenPlebe", 1)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.4171875, 0.14375, 0.9640625, 0.629166667)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+dialogopen (dlg_1, 1)
+
+// green plebe is glad the player made it
+
+dialogsettext (dlg_1, "Great!  You made it this far!")
+waitbtn (3000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "Now for the next lesson: buttons!")
+waitbtn (3000)
+
+entitysetobjstate ("GreenPlebe", 2)
+dialogsettext (dlg_1, "Buttons are used for activating/deactivating doors, gates, platforms and what not.  Simply step on the button to activate it.")
+waitbtn (5000)
+
+dialogsettext (dlg_1, "Some buttons can only be pressed once while others need to be pressed at all times.  In this case, this button only needs to be pressed once.")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 6)
+dialogsettext (dlg_1, "Go ahead and press the button to open the gate!")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "I'll wait for you at the other side.  Don't give up on me now!")
+waitbtn (5000)
+
+dialogopen (dlg_1, 0)
+
+waitbtn (1000)
+
+// move plebe to the next area
+entitysetwp ("GreenPlebe", "plebe_wp_2", "stopatend", 0)
+
+[tutor_2_s_end]
+
+[tutor_3_s_begin]
+
+vector3 tgt
+
+targetget ("cam_loc_ddoor_tgt", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_ddoor_tgt", tgt)
+viewmovetarget (tgt)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	EntityIsWPDone("GreenPlebe", isDone)
+}
+
+entitysetobjstate ("GreenPlebe", 5)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.4453125, 0.28333333, 0.95, 0.704166667)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+dialogopen (dlg_1, 1)
+
+// green plebe is shocked!
+
+dialogsettext (dlg_1, "Darn!  Looks like our path to victory is blocked by two gates!  There seems to be no other way!")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 6)
+dialogsettext (dlg_1, "Lucky Enough there are two Ta-Tas nearby!  Who knows?  Maybe they can help us open these impregnable gates!")
+waitbtn (5000)
+
+// tinker ta
+targetget ("cam_loc_tinkerta_tgt", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tinkerta_tgt", tgt)
+viewsettarget (tgt)
+
+dialogsettext (dlg_1, "Tinker Ta...")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "...and...")
+waitbtn (3000)
+
+// tata tug
+targetget ("cam_loc_tatatug_tgt", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tatatug_tgt", tgt)
+viewsettarget (tgt)
+
+dialogsettext (dlg_1, "Ta-Ta Tug")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Don't worry about their special abilities in this tutorial.  For now, we need them to press the button to open the gate!")
+waitbtn (8000)
+
+targetget ("cam_loc_ddoor_tgt", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_ddoor_tgt", tgt)
+viewsettarget (tgt)
+
+tataaddtoplaylist ("TinkerTa")
+tataaddtoplaylist ("TaTaTug")
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "They are now part of the Ta-Ta party!")
+waitbtn (3000)
+
+entitysetobjstate ("GreenPlebe", 2)
+dialogsettext (dlg_1, "Press the 'Previous' button to select one Ta-Ta back.  Default Keyboard: A Gamepad: button 3")
+waitbtn (5000)
+
+dialogsettext (dlg_1, "Press the 'Next' button to select one Ta-Ta front.  Default Keyboard: S Gamepad: button 4")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 1)
+dialogsettext (dlg_1, "It's that easy!  Now go ahead and try it out!  Move the newly acquired Ta-Tas to their corresponding buttons.")
+waitbtn (8000)
+
+entitysetobjstate ("GreenPlebe", 0)
+
+// move plebe to the next area
+entitysetwp ("GreenPlebe", "plebe_wp_3", "stopatend", 0)
+
+[tutor_3_s_end]
+
+[tutor_4_s_begin]
+vector3 tgt
+
+targetget ("cam_loc_goal_tgt", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_goal_tgt", tgt)
+viewmovetarget (tgt)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	EntityIsWPDone("GreenPlebe", isDone)
+}
+
+entitysetobjstate ("GreenPlebe", 6)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.4375, 0.3, 0.9484375, 0.672916667)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+dialogopen (dlg_1, 1)
+
+// green plebe is pleased!
+
+dialogsettext (dlg_1, "Excellent!  You truly are worthy of leading the Ta-Tas in great times of Mahatta!")
+waitbtn (5000)
+
+dialogsettext (dlg_1, "All you have to do now is walk up the goal area and achieve victory.")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 0)
+dialogsettext (dlg_1, "This concludes the basic tutorial!  Once you are back in cloud level, go inside the 'Level Select' room and start playing!")
+waitbtn (5000)
+
+entitysetobjstate ("GreenPlebe", 11)
+dialogsettext (dlg_1, "I now dance at your presence, hero of all Ta-Tas and green things such as I!  Go forth and save the Ta-Tas from the Fungi Infestation!")
+waitbtn (8000)
+
+dialogopen (dlg_1, 0)
+wait (1500)
+
+[tutor_4_s_end]
+
+[button_1_begin]
+objectactivate ("gate_1", 1)
+[button_1_end]
+
+[button_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_2", isActive)
+platformiswpbackward ("gate_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_2", 0)
+	objectactivate ("gate_2", 1)
+}
+else
+{
+	platformwpbackward ("gate_2", 1)
+}
+[button_2_end]
+
+[button_3_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_3", isActive)
+platformiswpbackward ("gate_3", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_3", 0)
+	objectactivate ("gate_3", 1)
+}
+else
+{
+	platformwpbackward ("gate_3", 1)
+}
+[button_3_end]
+
+[tutor_2_begin]
+setworldscene ("tutor_2_s")
+[tutor_2_end]
+
+[tutor_3_begin]
+setworldscene ("tutor_3_s")
+[tutor_3_end]
+
+[tutor_4_begin]
+setworldscene ("tutor_4_s")
+[tutor_4_end]

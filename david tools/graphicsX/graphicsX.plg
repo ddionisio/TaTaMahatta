@@ -1,0 +1,171 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: graphicsX - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\Winnt\Profiles\ddionisi\LOCALS~1\Temp\RSP3B8.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/graphicsX.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_ParticleFX.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_3DExplode.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_expand.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_explode.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_gas.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_gather.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_glow.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_lightningY.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_puff.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\PARFX_smoke.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_joints.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_mesh.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Model.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_ModelFX.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_ModelGenMap.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_ModelLoad_MD2.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_ModelLoad_MS3D.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Object.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_ObjectLoad.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Map.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_MapGenMidptFrac.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_QBSPCollision.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_QBSPDestroy.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_QBSPLoad.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_QBSPModel.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_QBSPRender.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_QBSPTool.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_QBSPVisBit.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Surface.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Texture.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_TextureDisplay.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_BkgrndFX.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Camera.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_ErrorCheck.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Fog.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Font.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Frustrum.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Light.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Main.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Math.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Misc.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Pager.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Primitives.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Screen.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_SkyBox.cpp"
+"D:\Ta-Ta Mahatta\david tools\graphicsX\GFX_Sprite.cpp"
+]
+Creating command line "xicl6.exe @c:\Winnt\Profiles\ddionisi\LOCALS~1\Temp\RSP3B8.tmp" 
+Creating temporary file "c:\Winnt\Profiles\ddionisi\LOCALS~1\Temp\RSP3B9.tmp" with contents
+[
+/nologo /out:"Debug\graphicsX.lib" 
+".\Debug\GFX_ParticleFX.obj"
+".\Debug\PARFX_3DExplode.obj"
+".\Debug\PARFX_expand.obj"
+".\Debug\PARFX_explode.obj"
+".\Debug\PARFX_gas.obj"
+".\Debug\PARFX_gather.obj"
+".\Debug\PARFX_glow.obj"
+".\Debug\PARFX_lightningY.obj"
+".\Debug\PARFX_puff.obj"
+".\Debug\PARFX_smoke.obj"
+".\Debug\GFX_joints.obj"
+".\Debug\GFX_mesh.obj"
+".\Debug\GFX_Model.obj"
+".\Debug\GFX_ModelFX.obj"
+".\Debug\GFX_ModelGenMap.obj"
+".\Debug\GFX_ModelLoad_MD2.obj"
+".\Debug\GFX_ModelLoad_MS3D.obj"
+".\Debug\GFX_Object.obj"
+".\Debug\GFX_ObjectLoad.obj"
+".\Debug\GFX_Map.obj"
+".\Debug\GFX_MapGenMidptFrac.obj"
+".\Debug\GFX_QBSPCollision.obj"
+".\Debug\GFX_QBSPDestroy.obj"
+".\Debug\GFX_QBSPLoad.obj"
+".\Debug\GFX_QBSPModel.obj"
+".\Debug\GFX_QBSPRender.obj"
+".\Debug\GFX_QBSPTool.obj"
+".\Debug\GFX_QBSPVisBit.obj"
+".\Debug\GFX_Surface.obj"
+".\Debug\GFX_Texture.obj"
+".\Debug\GFX_TextureDisplay.obj"
+".\Debug\GFX_BkgrndFX.obj"
+".\Debug\GFX_Camera.obj"
+".\Debug\GFX_ErrorCheck.obj"
+".\Debug\GFX_Fog.obj"
+".\Debug\GFX_Font.obj"
+".\Debug\GFX_Frustrum.obj"
+".\Debug\GFX_Light.obj"
+".\Debug\GFX_Main.obj"
+".\Debug\GFX_Math.obj"
+".\Debug\GFX_Misc.obj"
+".\Debug\GFX_Pager.obj"
+".\Debug\GFX_Primitives.obj"
+".\Debug\GFX_Screen.obj"
+".\Debug\GFX_SkyBox.obj"
+".\Debug\GFX_Sprite.obj"
+".\Debug\d3dfont.obj"
+".\Debug\d3dutil.obj"
+".\Debug\ddutil.obj"
+".\Debug\dxutil.obj"
+]
+Creating command line "link.exe -lib @c:\Winnt\Profiles\ddionisi\LOCALS~1\Temp\RSP3B9.tmp"
+<h3>Output Window</h3>
+Compiling...
+GFX_ParticleFX.cpp
+PARFX_3DExplode.cpp
+PARFX_expand.cpp
+PARFX_explode.cpp
+PARFX_gas.cpp
+PARFX_gather.cpp
+PARFX_glow.cpp
+PARFX_lightningY.cpp
+PARFX_puff.cpp
+PARFX_smoke.cpp
+GFX_joints.cpp
+GFX_mesh.cpp
+GFX_Model.cpp
+GFX_ModelFX.cpp
+GFX_ModelGenMap.cpp
+GFX_ModelLoad_MD2.cpp
+GFX_ModelLoad_MS3D.cpp
+GFX_Object.cpp
+GFX_ObjectLoad.cpp
+GFX_Map.cpp
+GFX_MapGenMidptFrac.cpp
+GFX_QBSPCollision.cpp
+GFX_QBSPDestroy.cpp
+GFX_QBSPLoad.cpp
+GFX_QBSPModel.cpp
+GFX_QBSPRender.cpp
+GFX_QBSPTool.cpp
+GFX_QBSPVisBit.cpp
+GFX_Surface.cpp
+GFX_Texture.cpp
+GFX_TextureDisplay.cpp
+GFX_BkgrndFX.cpp
+GFX_Camera.cpp
+GFX_ErrorCheck.cpp
+GFX_Fog.cpp
+GFX_Font.cpp
+GFX_Frustrum.cpp
+GFX_Light.cpp
+GFX_Math.cpp
+GFX_Misc.cpp
+GFX_Pager.cpp
+GFX_Primitives.cpp
+GFX_Screen.cpp
+GFX_SkyBox.cpp
+GFX_Sprite.cpp
+GFX_Main.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+graphicsX.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

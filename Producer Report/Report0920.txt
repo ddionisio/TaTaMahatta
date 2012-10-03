@@ -1,0 +1,28 @@
+Team 2D:
+			title
+David Dionisio		Producer/Tech Director
+Dimitry Kudlay		Designer/Production Manager.
+
+Producer Report for Sept 30/02
+
+Completed Last Week: 
+
+Dimitry: Gdd, Menu resourse, 1 Model.
+
+David: Gdd, All Ta-Ta models/textures, 1 Boss model/texture, 1 enemy model/texture,
+       started TDD.
+
+
+This Week Goals: 
+
+Dimitry: Finish 2 models, Menu program draft, Finish 1st level.
+
+David: Ta-Ta animations, map loading and have camera move around the level,
+       game project start up.
+
+
+Next Week Plans:
+
+Dimitry: Do 2 more models, Finish menu. 
+David: complete the model animations and other assigned models, have stuff move around in
+       cloud level, complete TDD.

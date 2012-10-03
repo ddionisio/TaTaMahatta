@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{52EFF7EC-D89A-4A05-A15F-C7C080294950}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(DXSDK_DIR)\Include</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(DXSDK_DIR)\Include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(DXSDK_DIR)\Lib\x86</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(DXSDK_DIR)\Lib\x86</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/graphicsX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Release\graphicsX.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Debug/graphicsX.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Lib>
+      <OutputFile>.\Debug\graphicsX.lib</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="GFX_BkgrndFX.cpp" />
+    <ClCompile Include="GFX_Camera.cpp" />
+    <ClCompile Include="GFX_ErrorCheck.cpp" />
+    <ClCompile Include="GFX_Fog.cpp" />
+    <ClCompile Include="GFX_Font.cpp" />
+    <ClCompile Include="GFX_Frustrum.cpp" />
+    <ClCompile Include="GFX_Light.cpp" />
+    <ClCompile Include="GFX_Main.cpp" />
+    <ClCompile Include="GFX_Math.cpp" />
+    <ClCompile Include="GFX_Misc.cpp" />
+    <ClCompile Include="GFX_Pager.cpp" />
+    <ClCompile Include="GFX_Primitives.cpp" />
+    <ClCompile Include="GFX_Screen.cpp" />
+    <ClCompile Include="GFX_SkyBox.cpp" />
+    <ClCompile Include="GFX_Sprite.cpp" />
+    <ClCompile Include="GFX_ParticleFX.cpp" />
+    <ClCompile Include="PARFX_3DExplode.cpp" />
+    <ClCompile Include="PARFX_expand.cpp" />
+    <ClCompile Include="PARFX_explode.cpp" />
+    <ClCompile Include="PARFX_gas.cpp" />
+    <ClCompile Include="PARFX_gather.cpp" />
+    <ClCompile Include="PARFX_glow.cpp" />
+    <ClCompile Include="PARFX_lightningY.cpp" />
+    <ClCompile Include="PARFX_puff.cpp" />
+    <ClCompile Include="PARFX_smoke.cpp" />
+    <ClCompile Include="GFX_joints.cpp" />
+    <ClCompile Include="GFX_mesh.cpp" />
+    <ClCompile Include="GFX_Model.cpp" />
+    <ClCompile Include="GFX_ModelFX.cpp" />
+    <ClCompile Include="GFX_ModelGenMap.cpp" />
+    <ClCompile Include="GFX_ModelLoad_MD2.cpp" />
+    <ClCompile Include="GFX_ModelLoad_MS3D.cpp" />
+    <ClCompile Include="GFX_Object.cpp" />
+    <ClCompile Include="GFX_ObjectLoad.cpp" />
+    <ClCompile Include="GFX_Map.cpp" />
+    <ClCompile Include="GFX_MapGenMidptFrac.cpp" />
+    <ClCompile Include="GFX_QBSPCollision.cpp" />
+    <ClCompile Include="GFX_QBSPDestroy.cpp" />
+    <ClCompile Include="GFX_QBSPLoad.cpp" />
+    <ClCompile Include="GFX_QBSPModel.cpp" />
+    <ClCompile Include="GFX_QBSPRender.cpp" />
+    <ClCompile Include="GFX_QBSPTool.cpp" />
+    <ClCompile Include="GFX_QBSPVisBit.cpp" />
+    <ClCompile Include="GFX_Surface.cpp" />
+    <ClCompile Include="GFX_Texture.cpp" />
+    <ClCompile Include="GFX_TextureDisplay.cpp" />
+    <ClCompile Include="d3dstuff\d3dfont.cpp" />
+    <ClCompile Include="d3dstuff\d3dutil.cpp" />
+    <ClCompile Include="d3dstuff\ddutil.cpp" />
+    <ClCompile Include="d3dstuff\dxutil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gdiX.h" />
+    <ClInclude Include="gdiX_bkgrndFX.h" />
+    <ClInclude Include="gdix_i.h" />
+    <ClInclude Include="gdiX_joints_i.h" />
+    <ClInclude Include="gdiX_mesh_i.h" />
+    <ClInclude Include="gdiX_modelFX_i.h" />
+    <ClInclude Include="gdiX_particleFX.h" />
+    <ClInclude Include="gdiX_particleFX_i.h" />
+    <ClInclude Include="gdiX_qbsp_flags.h" />
+    <ClInclude Include="gdiX_screen.h" />
+    <ClInclude Include="gdiX_types.h" />
+    <ClInclude Include="normTbl.h" />
+    <ClInclude Include="gdix_qbsp.h" />
+    <ClInclude Include="gdix_qbsp_i.h" />
+    <ClInclude Include="d3dstuff\d3dfont.h" />
+    <ClInclude Include="d3dstuff\dxutil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

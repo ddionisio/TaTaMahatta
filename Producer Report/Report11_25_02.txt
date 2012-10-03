@@ -1,0 +1,34 @@
+Team Digiballs:
+
+David Dionisio		Producer/Tech. Dir./Designer
+
+Producer Report for Nov. 25/02
+
+Completed Last Week: (Nov. 18 - Nov. 25)
+
+All Ta-Tas complete.
+Last 2 tutorial levels
+Options Menu
+
+This Week: (Nov. 26 - Nov. 31)
+
+3 Forest Level
+Shroom-Pa Functionality
+Cutscene plan?
+Intro?
+
+Next Week Plan: (Dec. 1 - Dec.6)
+
+Testing
+Finish up whatever is left unfinish.
+Assemble a testing team to test the current state of the game.
+
+Summary:
+
+	The game is going smoothly, but I feel as if I really need
+a break from working on the game.  Since the next professor is yet
+to be known, I plan to finish the game next semester rather than
+the end of this year.  Definitely need testers for this game, I don't
+know whether to be happy with the current version or not.  I need
+to hear from others.  If this game completely sucks...well then I'll
+have more the reason to work on it next semester.

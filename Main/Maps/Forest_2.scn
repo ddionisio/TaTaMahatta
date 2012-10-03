@@ -1,0 +1,83 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// //////////////////////////////
+// Levers
+[lever_1_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_1", isActive)
+platformiswpbackward ("platform_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_1", 0)
+	objectactivate ("platform_1", 1)
+}
+else
+{
+	platformwpbackward ("platform_1", 1)
+}
+[lever_1_end]
+
+[lever_2_begin]
+objectactivate ("gate_5", 1)
+[lever_2_end]
+
+[lever_3_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_3", isActive)
+platformiswpbackward ("platform_3", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_3", 0)
+	objectactivate ("platform_3", 1)
+}
+else
+{
+	platformwpbackward ("platform_3", 1)
+}
+[lever_3_end]
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+[button_1_end]
+
+[button_2_begin]
+objectactivate ("gate_1", 1)
+objectactivate ("gate_2", 1)
+[button_2_end]
+
+[button_3_begin]
+objectactivate ("gate_3", 1)
+objectactivate ("gate_4", 1)
+[button_3_end]
+
+[button_4_begin]
+objectactivate ("gate_6", 1)
+[button_4_end]

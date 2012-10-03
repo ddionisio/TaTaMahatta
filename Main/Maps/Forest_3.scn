@@ -1,0 +1,198 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_1", isActive)
+platformiswpbackward ("platform_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_1", 0)
+	objectactivate ("platform_1", 1)
+}
+else
+{
+	platformwpbackward ("platform_1", 1)
+}
+[button_1_end]
+
+[button_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_1", isActive)
+platformiswpbackward ("gate_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_1", 0)
+	objectactivate ("gate_1", 1)
+}
+else
+{
+	platformwpbackward ("gate_1", 1)
+}
+[button_2_end]
+
+[button_3_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_2", isActive)
+platformiswpbackward ("gate_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_2", 0)
+	objectactivate ("gate_2", 1)
+}
+else
+{
+	platformwpbackward ("gate_2", 1)
+}
+[button_3_end]
+
+[button_4_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+[button_4_end]
+
+[button_5_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_3", isActive)
+platformiswpbackward ("platform_3", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_3", 0)
+	objectactivate ("platform_3", 1)
+}
+else
+{
+	platformwpbackward ("platform_3", 1)
+}
+[button_5_end]
+
+[button_6_begin]
+objectactivate ("platform_5", 1)
+[button_6_end]
+
+[button_7_begin]
+objectactivate ("gate_3", 1)
+objectactivate ("gate_4", 1)
+[button_7_end]
+
+[button_8_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_5", isActive)
+platformiswpbackward ("gate_5", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_5", 0)
+	objectactivate ("gate_5", 1)
+}
+else
+{
+	platformwpbackward ("gate_5", 1)
+}
+[button_8_end]
+
+[button_9_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_6", isActive)
+platformiswpbackward ("gate_6", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_6", 0)
+	objectactivate ("gate_6", 1)
+}
+else
+{
+	platformwpbackward ("gate_6", 1)
+}
+[button_9_end]
+
+[button_10_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_7", isActive)
+platformiswpbackward ("gate_7", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_7", 0)
+	objectactivate ("gate_7", 1)
+}
+else
+{
+	platformwpbackward ("gate_7", 1)
+}
+[button_10_end]
+
+[button_11_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_6", isActive)
+platformiswpbackward ("platform_6", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_6", 0)
+	objectactivate ("platform_6", 1)
+}
+else
+{
+	platformwpbackward ("platform_6", 1)
+}
+[button_11_end]
+
+[button_12_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_7", isActive)
+platformiswpbackward ("platform_7", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_7", 0)
+	objectactivate ("platform_7", 1)
+}
+else
+{
+	platformwpbackward ("platform_7", 1)
+}
+[button_12_end]

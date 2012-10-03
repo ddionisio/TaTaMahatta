@@ -1,0 +1,130 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TATASETUP DIALOG DISCARDABLE  0, 0, 199, 236
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Ta-Ta Mahatta Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Play without Save",ID_PLAYNOSAVE,63,81,69,14
+    CONTROL         "Fullscreen",IDC_FULLSCREEN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,49,10
+    LISTBOX         IDC_RESOLUTION,63,7,112,48,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Save and Play",ID_PLAYNSAVE,70,64,56,14
+    LTEXT           "Controls:",IDC_STATIC,7,100,31,9
+    LTEXT           "Forward:",IDC_STATIC,7,115,30,9
+    LTEXT           "Backward:",IDC_STATIC,7,126,36,9
+    LTEXT           "Rotate Left:",IDC_STATIC,7,137,41,9
+    LTEXT           "Rotate Right:",IDC_STATIC,7,149,46,9
+    LTEXT           "A - button (use/ok):",IDC_STATIC,7,160,66,9
+    LTEXT           "B - button (look/cancel):",IDC_STATIC,7,171,80,9
+    LTEXT           "C - button (Select prev. Ta-Ta):",IDC_STATIC,7,182,101,
+                    9
+    LTEXT           "D - button (Select next Ta-Ta):",IDC_STATIC,7,193,101,9
+    LTEXT           "UP arrow key",IDC_STATIC,134,114,58,9
+    LTEXT           "DOWN arrow key",IDC_STATIC,134,126,58,9
+    LTEXT           "LEFT arrow key",IDC_STATIC,133,136,59,9
+    LTEXT           "RIGHT arrow key",IDC_STATIC,133,146,59,9
+    LTEXT           "Z",IDC_STATIC,133,158,59,9
+    LTEXT           "X",IDC_STATIC,133,170,59,9
+    LTEXT           "A",IDC_STATIC,133,182,59,9
+    LTEXT           "S",IDC_STATIC,133,192,59,9
+    LTEXT           "Pause:",IDC_STATIC,7,204,101,9
+    LTEXT           "SPACE",IDC_STATIC,133,202,59,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TATASETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_TATAICON            ICON    DISCARDABLE     "tataicon.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

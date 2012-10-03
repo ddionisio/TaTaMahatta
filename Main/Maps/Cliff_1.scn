@@ -1,0 +1,350 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+// display the bridge activation
+setworldscene ("scene_btn_1")
+[button_1_end]
+
+[button_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+[button_2_end]
+
+[button_3_begin]
+objectactivate ("platform_3", 1)
+[button_3_end]
+
+[button_4_begin]
+objectactivate ("platform_5", 1)
+[button_4_end]
+
+[button_5_begin]
+// display the bridge activation
+setworldscene ("scene_btn_5")
+[button_5_end]
+
+[button_6_begin]
+objectactivate ("platform_9", 1)
+[button_6_end]
+
+// 
+// Triggers
+// 
+
+[trigger_1_begin]
+// Para-TaTa intro
+setworldscene ("scene_paratata")
+[trigger_1_end]
+
+[trigger_2_begin]
+// Chi-Ta intro
+setworldscene ("scene_chita")
+[trigger_2_end]
+
+[trigger_3_begin]
+// Enlightment
+setworldscene ("scene_enlightment")
+[trigger_3_end]
+
+// 
+// Scenes
+// 
+
+[scene_paratata_begin]
+vector3 tgt
+
+targetget ("cam_loc_paratata", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_paratata", tgt)
+viewmovetarget (tgt)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.4109375, 0.310416667, 0.94375, 0.752083333)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display para-tata's portrait
+image img_1 ("Textures\Portraits\ParaTaTa_port.jpg", 0.571875, 0.025, 0.7703125, 0.289583333, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// Para-TaTa's introduction
+
+dialogsettext (dlg_1, "I hail from the great mountain ranges of Cana-Ta to aid my dear fellow Ta-Tas.  The quest to find the legendary White Ta-Ta!")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "I have heard rumors that a Farseer Ta-Ta is located around here somewhere.  Perhaps this Ta-Ta can give us the location of the White Ta-Ta!")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "Come, my dear fellow Ta-Tas.  The Farseer Ta-Ta awaits!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+dialogsettext (dlg_1, "Para Ta-Ta's advanced equipment allows it access to Fungi Spore Areas that are commonly harmful to other Ta-Tas.")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "This Ta-Ta can also glide by using it's spiffy umbrella.  To use the umbrella, just hold the 'Action' key while falling down.")
+waitbtn (4000)
+
+dialogopen (dlg_1, 0)
+
+tataaddtoplaylist ("ParaTaTa")
+[scene_paratata_end]
+
+[scene_chita_begin]
+int isDone (0)
+
+while (isDone == 0)
+{
+	viewfollowwaypoint ("chita_cam_wp", 0, 1500, isDone)
+}
+
+wait (1000)
+
+vector3 tgt
+
+targetget ("cam_loc_chita", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_chita", tgt)
+viewmovetarget (tgt)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.425, 0.322916667, 0.959375, 0.745833333)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display para-tata's portrait
+image img_1 ("Textures\Portraits\ChiTa_port.jpg", 0.571875, 0.035416667, 0.771875, 0.3, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// Chi-Ta's introduction
+
+dialogsettext (dlg_1, "Who dares disturb my meditation!?  Oh, my dear fellow Ta-Tas!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "What!?  There's a fungi Invasion!?")
+waitbtn (1000)
+
+dialogsettext (dlg_1, "So, you are asking me if I'm the Farseer Ta-Ta...and you are looking for the legendary White Ta-Ta?")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "No my friend, I am not the Farseer Ta-Ta that you seek of and I do not know the location of the White Ta-Ta.  But I do know who this Farseer Ta-Ta is. A good friend of mine.")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "With my powers we will be able to reach my good friend, the Farseer Ta-Ta.  The Farseer Ta-Ta will surely find the location of the legendary White Ta-Ta.")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+dialogsettext (dlg_1, "Chi-Ta has the ability to pull objects from a distance.  Just hold the 'Action' key to pull any object towards Chi-Ta.  Chi-Ta can pull almost anything, including: blocks, enemies, items and even fellow Ta-Tas.")
+waitbtn (4000)
+
+dialogopen (dlg_1, 0)
+
+tataaddtoplaylist ("ChiTa")
+[scene_chita_end]
+
+[scene_enlightment_begin]
+vector3 tgt
+
+targetget ("cam_loc_look_at_paparata", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_look_at_paparata", tgt)
+viewmovetarget (tgt)
+
+// move PaparaTa
+entitysetobjstate ("PaparaTa", 3)
+entitysetwp ("PaparaTa", "paparata_wp_1", "stopatend", 0)
+
+// wait till paparata is done moving
+wait (6000)
+
+// set to idle
+entitysetobjstate ("PaparaTa", 0)
+
+wait (1000)
+
+// set camera near paparata
+targetget ("cam_loc_look_at_paparata_2", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_look_at_paparata_2", tgt)
+viewmovetarget (tgt)
+
+wait (1000)
+
+// roll a bit
+entitysetobjstate ("PaparaTa", 8)
+wait (1000)
+
+// flashy thing
+entitysetobjstate ("PaparaTa", 1)
+wait (3000)
+
+entitysetobjstate ("PaparaTa", 0)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.475, 0.316666667, 0.9765625, 0.76875)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display papa-RaTa's portrait
+image img_1 ("Textures\Portraits\PaparaTa_port.jpg", 0.63125, 0.01875, 0.8296875, 0.283333333, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// Papa-RaTa speaks!
+
+dialogsettext (dlg_1, "I AM THE GREAT PAPARA-TA!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "And What is this Ta-Ta doing in my humble domain?")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "So you want to know the location of the legendary White Ta-Ta?")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "With my all seeing powers I will search this White Ta-Ta...")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Tamaratta-ratta-ta!  Find me the one and only legendary White Ta-Ta!")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "MA-TA!")
+waitbtn (1000)
+
+imagesetstatus (img_1, 2)
+
+dialogopen (dlg_1, 0)
+
+// focus the camera to PaparaTa
+targetget ("cam_loc_look_at_paparata_3", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_look_at_paparata_3", tgt)
+viewmovetarget (tgt)
+
+wait (1000)
+
+// /////////////////////////////////////////
+// do some bizzare chanting dance
+entitysetobjstate ("PaparaTa", 9)
+wait (2000)
+
+entitysetobjstate ("PaparaTa", 8)
+wait (1000)
+
+entitysetobjstate ("PaparaTa", 4)
+wait (1000)
+
+// go crazy
+entitysetobjstate ("PaparaTa", 1)
+
+entitysetwp ("PaparaTa", "paparata_wp_2", "stopatend", 0)
+
+// wait till paparata is done moving
+wait (6000)
+
+entitysetobjstate ("PaparaTa", 0)
+
+// focus the camera to dialog again
+targetget ("cam_loc_look_at_paparata_2", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_look_at_paparata_2", tgt)
+viewmovetarget (tgt)
+
+// talk about the search
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "This White Ta-Ta you seek of is located in the Swamp Lands.  In the very heart of the Fungi Infestation.")
+waitbtn (4000)
+
+dialogsettext (dlg_1, "Your journey to the Swamp Lands will not be easy.  Tread lightly my fellow Ta-Tas.")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "May the great Tiki-Ta protect you all!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+dialogopen (dlg_1, 0)
+
+// add the goal
+goaladd (1)
+
+[scene_enlightment_end]
+
+[scene_btn_1_begin]
+vector3 tgt
+
+targetget ("cam_loc_1", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_1", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("platform_1", 1)
+
+wait (3000)
+[scene_btn_1_end]
+
+[scene_btn_5_begin]
+vector3 tgt
+
+targetget ("cam_loc_2", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_2", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("platform_7", 1)
+objectactivate ("platform_8", 1)
+
+wait (3000)
+[scene_btn_5_end]

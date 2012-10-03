@@ -1,0 +1,51 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+[boss_intro_begin]
+setworldscene ("boss_scene_1")
+[boss_intro_end]
+
+[boss_scene_1_begin]
+
+vector3 tgt
+
+targetget ("cam_loc_boss", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_boss", tgt)
+viewsettarget (tgt)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	viewfollowwaypoint ("cam_wp_boss", 0, 3000, isDone)
+}
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.3953125, 0.258333333, 0.9265625, 0.691666667)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+dialogopen (dlg_1, 1)
+
+// information about shroom-pa
+
+dialogsettext (dlg_1, "Behold the monstrous Fungi: Shroom-Pa.")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Its hardened Fungi Skin can not easily be damaged by any Ta-Weapons.")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Shroom-Pa can only be vulnerable when it is knocked down.  Find a way to knock down this vile creature and only then can you inflict harm on it.")
+waitbtn (5000)
+
+dialogopen(dlg_1, 0)
+
+entitysetwp ("ShroomPa_1", "shroompa_wp", "repeat", 0)
+
+[boss_scene_1_end]

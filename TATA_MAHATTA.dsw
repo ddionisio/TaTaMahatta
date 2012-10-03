@@ -1,0 +1,128 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "InputX"=".\david tools\InputX\InputX.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/", aaaaaaaa
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "Parser"=".\david tools\Parser\Parser.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/", aaaaaaaa
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ScriptTease"=".\david tools\ScriptTease\ScriptTease.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/", aaaaaaaa
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TATA_MAHATTA"=".\TATA_MAHATTA.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/", aaaaaaaa
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name graphicsX
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name InputX
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name Parser
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ScriptTease
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name timer
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "graphicsX"=".\david tools\graphicsX\graphicsX.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/", aaaaaaaa
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "timer"=".\david tools\timer\timer.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/", aaaaaaaa
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,315 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+objectactivate ("platform_1", 1)
+[button_1_end]
+
+[button_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+[button_2_end]
+
+[button_3_begin]
+// show what the button activates
+setworldscene ("scene_btn_3")
+[button_3_end]
+
+[button_4_begin]
+objectactivate ("platform_7", 1)
+[button_4_end]
+
+[button_5_begin]
+objectactivate ("platform_8", 1)
+[button_5_end]
+
+//
+// Levers
+//
+
+[lever_1_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_4", isActive)
+platformiswpbackward ("platform_4", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_4", 0)
+	objectactivate ("platform_4", 1)
+}
+else
+{
+	platformwpbackward ("platform_4", 1)
+}
+[lever_1_end]
+
+[lever_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_5", isActive)
+platformiswpbackward ("platform_5", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_5", 0)
+	objectactivate ("platform_5", 1)
+}
+else
+{
+	platformwpbackward ("platform_5", 1)
+}
+[lever_2_end]
+
+[lever_3_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_6", isActive)
+platformiswpbackward ("platform_6", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_6", 0)
+	objectactivate ("platform_6", 1)
+}
+else
+{
+	platformwpbackward ("platform_6", 1)
+}
+[lever_3_end]
+
+[lever_4_begin]
+objectactivate ("platform_9", 1)
+objectactivate ("evil_cannon_1", 1)
+objectactivate ("evil_cannon_2", 1)
+[lever_4_end]
+
+// 
+// Triggers
+// 
+
+[trigger_1_begin]
+setworldscene ("scene_frostta")
+[trigger_1_end]
+
+[trigger_2_begin]
+// RED ALERT!
+setworldscene ("scene_alert")
+[trigger_2_end]
+
+//
+// Scenes
+//
+
+[scene_frostta_begin]
+vector3 tgt
+
+targetget ("cam_loc_frostta", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_frostta", tgt)
+viewsettarget (tgt)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.471875, 0.4125, 0.9421875, 0.7375)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display frost-ta's portrait
+image img_1 ("Textures\Portraits\FrostTa_port.jpg", 0.6015625, 0.1125, 0.8, 0.377083333, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// frost-ta is free!
+
+dialogsettext (dlg_1, "TaMahaTaTa! TaMahaTaTa! [I'm Free! I'm Free!]")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+dialogsettext (dlg_1, "Excellent!  You have freed Frost-Ta!  This Ta is equipped with a gadget that can freeze enemies instantly!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Let the enemies feel the cold power of Frost-Ta!")
+waitbtn (3000)
+
+dialogopen (dlg_1, 0)
+
+tataaddtoplaylist ("FrostTa")
+[scene_frostta_end]
+
+[scene_btn_3_begin]
+vector3 tgt
+
+targetget ("cam_loc_1", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_1", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("platform_3", 1)
+
+wait (3000)
+[scene_btn_3_end]
+
+[scene_alert_begin]
+vector3 tgt
+
+targetget ("cam_loc_mayo", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_mayo", tgt)
+viewsettarget (tgt)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.3609375, 0.41875, 0.9640625, 0.7375)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display mayonnaise's portrait
+image img_1 ("Textures\Portraits\mayonnaise_port.jpg", 0.51875, 0.110416667, 0.7171875, 0.375, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// mayonnaise calls on alert!
+
+dialogsettext (dlg_1, "Hey You!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Hold on!  You're not a Fungi!  What brings a cute adorable creature like you in this cold isolated place?  Oh wait, you look round and fluffy...")
+waitbtn (6000)
+
+dialogsettext (dlg_1, "Arg! What am I doing talking to you!?")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "INTRUDER ALERT!  Ta-Ta invasion imminent!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "All Fungi, to your battle station!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+dialogopen (dlg_1, 0)
+
+// ////////////////////////////////////////
+// view trap 1
+targetget ("cam_loc_enemy_1", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_enemy_1", tgt)
+viewsettarget (tgt)
+
+// activate trap 1
+objectactivate ("door_3_1", 1)
+objectactivate ("door_3_2", 1)
+
+// wait for stuff
+wait (4000)
+
+// ////////////////////////////////////////
+// view trap 2
+targetget ("cam_loc_enemy_2", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_enemy_2", tgt)
+viewsettarget (tgt)
+
+// activate trap 1
+objectactivate ("door_1", 1)
+objectactivate ("door_2", 1)
+
+// wait for stuff
+wait (4000)
+
+// ////////////////////////////////////////
+// view trap 3
+targetget ("cam_loc_enemy_3", tgt)
+viewsetloc (tgt)
+
+targetget ("cam_tgt_enemy_3", tgt)
+viewsettarget (tgt)
+
+// activate trap 1
+objectactivate ("door_4_1", 1)
+objectactivate ("door_4_2", 1)
+
+// wait for stuff
+wait (4000)
+
+[scene_alert_end]
+
+[gas_tele_1_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt")
+[gas_tele_1_end]
+
+[gas_tele_2_1_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt_2_1")
+[gas_tele_2_1_end]
+
+[gas_tele_2_2_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt_2_2")
+[gas_tele_2_2_end]
+
+[gas_tele_3_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt_3")
+[gas_tele_3_end]
+
+[gas_tele_4_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt_4")
+[gas_tele_4_end]
+
+[gas_tele_5_1_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt_5_1")
+[gas_tele_5_1_end]
+
+[gas_tele_5_2_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt_5_2")
+[gas_tele_5_2_end]

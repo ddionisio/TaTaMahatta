@@ -1,0 +1,37 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// *****************************************
+// Intro Script
+// *****************************************
+[Intro_begin]
+viewsetdelay (500)
+
+vector3 camLoc
+targetget ("camera_start", camLoc)
+viewsetloc (camLoc)
+
+int isDone (0)
+
+int mainMenu
+menuisavailable ("menu_main", mainMenu)
+
+if (mainMenu)
+{
+	while (1) // while (isDone == 1)
+	{
+		viewfollowwaypoint ("cam_f", 1, 2500, isDone)
+	}
+}
+[Intro_end]
+
+// *****************************************
+// Trigger Scripts
+// *****************************************
+[LevelSelect_begin]
+setstagelevel (0, 0)
+mapload ("Maps\cloud_stageselect.bsp", "none", 0, 0)
+[LevelSelect_end]

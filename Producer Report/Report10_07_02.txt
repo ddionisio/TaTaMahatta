@@ -1,0 +1,45 @@
+Team 2D:
+			title
+David Dionisio		Producer/Tech Director
+Dimitry Kudlay		Designer/Production Manager.
+
+Producer Report for Oct 07/02
+
+Completed Last Week: (Sept. 30 - Oct. 6)
+
+Dimitry: Completed models and all texturing.
+	Menu source code 65% complete
+	Wrote templatized link list for use w/ menu.
+
+David: Defender Animation done, camera pathing and view control.  Script engine
+       for the game integrated with camera functionality.  Added a few stuff in
+       TDD.  Map loading done with entity loading.
+
+
+This Week Goals: (Oct. 7 - Oct. 13)
+
+Dimitry: Complete 2 character animation sets.
+	 Complete 1st "Cloud" level.
+         Continue integrating menus
+
+David: More Ta-Ta animations (must complete them all), 
+       Ta-Ta move around cloud level, HUD, push button.
+       TDD due...don't really care.
+
+
+Next Week Plans: (Oct. 14 - Oct. 20)
+
+Dimitry: Finish menus
+	 Complete last 2 animation sets.
+
+David: Cloud level fully functional (select Ta-Ta, save, select level), complete Ta-Ta code.
+       Possibly have all level object coding done...and maybe even start on enemies.
+       Enemy animations.
+
+Summary:
+
+	Everything is going as planned, but we still can't afford to slack off.  Priority
+has been put to having stuff happen in the game rather than all animations.  David might
+have to push the due date for all animations.  David has decided to alternate on coding
+one Ta-Ta and finish it's functionality.  David is still uncertain on how to code up the
+AI, so TDD might still not be a waste of time...

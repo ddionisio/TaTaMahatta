@@ -1,0 +1,21 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+[btn_1_on_begin]
+objectactivate ("platform_1", 1)
+platformwpbackward ("platform_1", 0)
+[btn_1_on_end]
+
+[btn_1_off_begin]
+platformwpbackward ("platform_1", 1)
+[btn_1_off_end]
+
+[falldown_begin]
+string entity
+triggergetentity (entity)
+creaturehit (entity, 1)
+creatureteleport (entity, "fall_respawn_tgt")
+[falldown_end]

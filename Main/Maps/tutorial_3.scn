@@ -1,0 +1,208 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+[lever_elevator_1_begin]
+int isBackward
+int isActive
+
+objectisactive ("elevator_1", isActive)
+platformiswpbackward ("elevator_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("elevator_1", 0)
+	objectactivate ("elevator_1", 1)
+}
+else
+{
+	platformwpbackward ("elevator_1", 1)
+}
+[lever_elevator_1_end]
+
+[lever_2_on_begin]
+objectactivate ("hill_1", 1)
+[lever_2_on_end]
+
+[lever_3_on_begin]
+objectactivate ("gate_1", 1)
+[lever_3_on_end]
+
+[platform_123_begin]
+int isBackward
+int isActive
+
+// ////////////////////////////////////////////////
+// Platform 1
+objectisactive ("platform_1", isActive)
+platformiswpbackward ("platform_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_1", 0)
+	objectactivate ("platform_1", 1)
+}
+else
+{
+	platformwpbackward ("platform_1", 1)
+}
+// ////////////////////////////////////////////////
+
+// ////////////////////////////////////////////////
+// Platform 2
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+file theFile ("script_level3_dump.txt")
+file_print_int (theFile, isBackward)
+file_print_int (theFile, isActive)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+// ////////////////////////////////////////////////
+
+// ////////////////////////////////////////////////
+// Platform 3
+objectisactive ("platform_3", isActive)
+platformiswpbackward ("platform_3", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_3", 0)
+	objectactivate ("platform_3", 1)
+}
+else
+{
+	platformwpbackward ("platform_3", 1)
+}
+// ////////////////////////////////////////////////
+[platform_123_end]
+
+[platform_12_begin]
+int isBackward
+int isActive
+
+// ////////////////////////////////////////////////
+// Platform 1
+objectisactive ("platform_1", isActive)
+platformiswpbackward ("platform_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_1", 0)
+	objectactivate ("platform_1", 1)
+}
+else
+{
+	platformwpbackward ("platform_1", 1)
+}
+// ////////////////////////////////////////////////
+
+// ////////////////////////////////////////////////
+// Platform 2
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+// ////////////////////////////////////////////////
+[platform_12_end]
+
+[platform_23_begin]
+int isBackward
+int isActive
+
+// ////////////////////////////////////////////////
+// Platform 2
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+// ////////////////////////////////////////////////
+
+// ////////////////////////////////////////////////
+// Platform 3
+objectisactive ("platform_3", isActive)
+platformiswpbackward ("platform_3", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_3", 0)
+	objectactivate ("platform_3", 1)
+}
+else
+{
+	platformwpbackward ("platform_3", 1)
+}
+// ////////////////////////////////////////////////
+[platform_23_end]
+
+[lever_7_onoff_begin]
+int isBackward
+int isActive
+
+objectisactive ("elevator_2", isActive)
+platformiswpbackward ("elevator_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("elevator_2", 0)
+	objectactivate ("elevator_2", 1)
+}
+else
+{
+	platformwpbackward ("elevator_2", 1)
+}
+
+objectactivate ("gate_2", 1)
+[lever_7_onoff_end]
+
+[lever_8_onoff_begin]
+int isBackward
+int isActive
+
+objectisactive ("elevator_2", isActive)
+platformiswpbackward ("elevator_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("elevator_2", 0)
+	objectactivate ("elevator_2", 1)
+}
+else
+{
+	platformwpbackward ("elevator_2", 1)
+}
+[lever_8_onoff_end]
+
+[falldown_begin]
+string entity
+triggergetentity (entity)
+tatadetachandspawnbaby (entity)
+creaturehit (entity, 1)
+creatureteleport (entity, "fall_respawn_tgt")
+[falldown_end]

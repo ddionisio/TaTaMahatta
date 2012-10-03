@@ -1,0 +1,71 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+[button_1_begin]
+objectactivate ("platform_1", 1)
+objectactivate ("platform_2", 1)
+[button_1_end]
+
+[button_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_3", isActive)
+platformiswpbackward ("platform_3", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_3", 0)
+	objectactivate ("platform_3", 1)
+}
+else
+{
+	platformwpbackward ("platform_3", 1)
+}
+[button_2_end]
+
+[button_3_begin]
+int isBackward
+int isActive
+
+objectisactive ("gate_1", isActive)
+platformiswpbackward ("gate_1", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("gate_1", 0)
+	objectactivate ("gate_1", 1)
+}
+else
+{
+	platformwpbackward ("gate_1", 1)
+}
+[button_3_end]
+
+[button_4_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_4", isActive)
+platformiswpbackward ("platform_4", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_4", 0)
+	objectactivate ("platform_4", 1)
+}
+else
+{
+	platformwpbackward ("platform_4", 1)
+}
+[button_4_end]
+
+[falldown_begin]
+string entity
+triggergetentity (entity)
+creaturehit (entity, 1)
+creatureteleport (entity, "fall_respawn_tgt")
+[falldown_end]

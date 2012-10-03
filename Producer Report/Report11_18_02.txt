@@ -1,0 +1,39 @@
+Team Digiballs:
+
+David Dionisio		Producer/Tech. Dir./Designer
+
+Producer Report for Nov. 18/02
+
+Completed Last Week: (Nov. 11 - 17)
+
+All Menus except for 'Options' complete.
+5th Ta-Ta complete
+3 Tutorial Levels done.
+Cloud Level done
+
+This Week Goals: (Nov. 18 - Nov. 25)
+
+All Ta-Tas complete.
+Last 2 tutorial levels
+
+Next Week Plans: (Nov. 26 - Nov. 31)
+
+3 Forest Level
+Shroom-Pa Animation and Functionality
+Options Menu
+
+Summary:
+
+	As usual, things are going my way.  The game will
+not be completed by the end of this semester.  However,
+a full fledged shareware of this game will be released as
+the final deliverable this semester.  This includes the
+tutorial levels and the forest stages.  I have full confident
+that this is acceptible.  As I've seen so far, too many games this
+semester seems somewhat more lacking than this project.  The rest of the work will be completed during winter break and next semester.
+
+	I plan to make another game next semester (as Digipen
+requires that a multiplayer must be implemented for each project).
+Well they'll get it alright.  As soon as this game is done, work
+on the next project will start immediately.  Plans for the next
+game starts during winter break.

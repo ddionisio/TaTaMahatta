@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Parser.dsp]
+SCC_Aux_Path = "D:\Tata"
+SCC_Project_Name = "$/David Tools/Parser", JDAAAAAA

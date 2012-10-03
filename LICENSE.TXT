@@ -1,0 +1,23 @@
+==============================================
+                   END USER LICENSE AGREEMENT
+==============================================
+
+GENERAL PRODUCT LICENSE.
+
+This copy of Ta-Ta Mahatta (the "Software") is intended solely for your personal non-commercial home entertainment use.  You may not decompile, reverse engineer, or disassemble the Software, except as permitted by law.  David Dionisio and its licensors retain all right, title and interest in the Software including all intellectual property rights embodied therein and derivatives thereof.  The Software, including, without limitation, all code, data structures, images, sounds, text, screens, game play, derivative works and all other elements of the Software may not be copied, resold, rented, leased, distributed (electronically or otherwise), used on a pay-per-play, coin-op or other for-charge basis, or for any commercial purpose. Any permissions granted herein are provided on a temporary basis and can be withdrawn by David Dionisio at any time.  All rights not expressly granted are reserved.
+
+ACCEPTANCE OF LICENSE TERMS.
+
+By acquiring and retaining this Software, you assent to the terms and restrictions of this limited license. By installing, copying, or  otherwise using the Software or any updates, you agree to be bound by the terms of this EULA. If you  do not agree to the terms of this EULA, do not install the Software
+
+DISCLAIMER OF WARRANTY
+
+The Software is provided "as is" without warranty of any kind. To the maximum extent permitted by applicable law, David Dionisio and its suppliers disclaim all warranties, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose and any warranty against infringement, with regard to the Software.
+
+LIMITATION OF LIABILITY.
+
+To the maximum extent permitted by applicable law, in no event shall David Dionisio or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, without limitation, damages for loss of business time, business profits, business information, or any other kind of loss) arising out of the use of, or inability to use the Software, or the failure to provide support services, even if David Dionisio or one of its suppliers has been advised of the possibility of such damages. David Dionisio's entire liability shall not exceed the price paid for the Software.
+
+COPYRIGHT INFORMATION
+
+Ta-Ta Mahatta  (c)2003 David Dionisio.  All other copyrights and trademarks are property of their respective owners.  All Rights Reserved.

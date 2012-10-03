@@ -1,0 +1,463 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+objectactivate ("platform_a_1", 1)
+objectactivate ("platform_a_2", 1)
+objectactivate ("platform_a_3", 1)
+objectactivate ("platform_a_4", 1)
+[button_1_end]
+
+[button_field_1_begin]
+setworldscene ("scene_field_1")
+[button_field_1_end]
+
+[button_field_2_begin]
+setworldscene ("scene_field_2")
+[button_field_2_end]
+
+[button_field_3_begin]
+setworldscene ("scene_field_3")
+[button_field_3_end]
+
+[button_field_4_begin]
+setworldscene ("scene_field_4")
+[button_field_4_end]
+
+[button_3_1_begin]
+// first, set the platform's waypoint 
+// (this is one way to reset the movement)
+entitysetwp ("platform_crap_1", "platform_crap_1_wp", "stopatend", 0)
+
+// activate the object if not yet done
+objectactivate ("platform_crap_1", 1)
+[button_3_1_end]
+
+[button_3_2_begin]
+entitysetwp ("platform_crap_2", "platform_crap_2_wp", "stopatend", 0)
+
+objectactivate ("platform_crap_2", 1)
+[button_3_2_end]
+
+[button_3_3_begin]
+entitysetwp ("platform_crap_3", "platform_crap_3_wp", "stopatend", 0)
+
+objectactivate ("platform_crap_3", 1)
+[button_3_3_end]
+
+[button_4_begin]
+objectactivate ("platform_ka", 1)
+[button_4_end]
+
+[button_7_begin]
+objectactivate ("platform_yo", 1)
+[button_7_end]
+
+[happy_btn_1_begin]
+objectactivate ("happiness_1", 1)
+[happy_btn_1_end]
+
+[happy_btn_2_begin]
+objectactivate ("happiness_2", 1)
+[happy_btn_2_end]
+
+[happy_btn_3_begin]
+objectactivate ("happiness_3", 1)
+[happy_btn_3_end]
+
+[happy_btn_4_begin]
+objectactivate ("happiness_4", 1)
+[happy_btn_4_end]
+
+// 
+// Scenes
+// 
+[scene_field_1_begin]
+vector3 tgt
+
+targetget ("cam_loc_crystal_1", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_crystal_1", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("crystal_1", 1)
+
+wait (1500)
+entitypolldeath ("field_lightning_1")
+wait (1500)
+
+// check if all other crystals has been finished
+// if so, then do the ta-ta mahatta cutscene
+int bFl2 objectisactive ("crystal_2", bFl2)
+int bFl3 objectisactive ("crystal_3", bFl3)
+int bFl4 objectisactive ("crystal_4", bFl4)
+
+if (bFl2 == 1 && bFl3 == 1 && bFl4 == 1)
+{
+	setworldscene ("scene_tatamahatta")
+}
+[scene_field_1_end]
+
+[scene_field_2_begin]
+vector3 tgt
+
+targetget ("cam_loc_crystal_2", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_crystal_2", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("crystal_2", 1)
+
+wait (1500)
+entitypolldeath ("field_lightning_2")
+wait (1500)
+
+// check if all other crystals has been finished
+// if so, then do the ta-ta mahatta cutscene
+int bFl1 objectisactive ("crystal_1", bFl1)
+int bFl3 objectisactive ("crystal_3", bFl3)
+int bFl4 objectisactive ("crystal_4", bFl4)
+
+if (bFl1 == 1 && bFl3 == 1 && bFl4 == 1)
+{
+	setworldscene ("scene_tatamahatta")
+}
+[scene_field_2_end]
+
+[scene_field_3_begin]
+vector3 tgt
+
+targetget ("cam_loc_crystal_3", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_crystal_3", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("crystal_3", 1)
+
+wait (1500)
+entitypolldeath ("field_lightning_3")
+wait (1500)
+
+// check if all other crystals has been finished
+// if so, then do the ta-ta mahatta cutscene
+int bFl1 objectisactive ("crystal_1", bFl1)
+int bFl2 objectisactive ("crystal_2", bFl2)
+int bFl4 objectisactive ("crystal_4", bFl4)
+
+if (bFl1 == 1 && bFl2 == 1 && bFl4 == 1)
+{
+	setworldscene ("scene_tatamahatta")
+}
+[scene_field_3_end]
+
+[scene_field_4_begin]
+vector3 tgt
+
+targetget ("cam_loc_crystal_4", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_crystal_4", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("crystal_4", 1)
+
+wait (1500)
+entitypolldeath ("field_lightning_4")
+wait (1500)
+
+// check if all other crystals has been finished
+// if so, then do the ta-ta mahatta cutscene
+int bFl1 objectisactive ("crystal_1", bFl1)
+int bFl2 objectisactive ("crystal_2", bFl2)
+int bFl3 objectisactive ("crystal_3", bFl3)
+
+if (bFl1 == 1 && bFl2 == 1 && bFl3 == 1)
+{
+	setworldscene ("scene_tatamahatta")
+}
+[scene_field_4_end]
+
+[intro_begin]
+
+// camera intro
+vector3 tgt
+
+targetget ("intro_cam_start", tgt)
+viewsetloc (tgt)
+targetget ("intro_tgt_1", tgt)
+viewsettarget (tgt)
+
+int isDone (0)
+
+while (isDone == 0)
+{
+	viewfollowwaypoint ("intro_wp", 0, 2000, isDone)
+}
+
+wait (500)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.30625, 0.422916667, 0.9453125, 0.90625)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 127, 255, 127)
+
+// display corrupta's portrait
+image img_1 ("Textures\Portraits\CorrupTa_port.tga", 0.3265625, 0.020833333, 0.925, 0.41875, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// CorrupTa's introduction
+
+dialogsettext (dlg_1, "The so-called Legendary White Ta-Ta has finally arrived!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "And...")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "You brought along friends as well...How wonderful!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Do you Ta-Tas really think you can destroy the Fungi Colony!?")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Foolish Ta-Tas! I hate you all!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+// display corrupta's portrait
+image img_2 ("Textures\Portraits\FungiLord_port.jpg", 0.5078125, 0.133333333, 0.70625, 0.397916667, 255, 255, 255, 255)
+
+imagesetstatus (img_2, 1)
+
+dialogsettext (dlg_1, "Soon the Land of Ta will be mine! All Ta-Tas will bow before me, the malevolent Fungi Lord!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "MWAHAHAHAHAHA!")
+waitbtn (2000)
+
+imagesetstatus (img_2, 2)
+imagesetstatus (img_1, 1)
+
+dialogsettext (dlg_1, "You heard my master! You must cease resist and let the glorious Fungi Colony infest the Land of Ta!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+
+dialogopen (dlg_1, 0)
+
+wait (1000)
+
+// ////////////////////////////////////////////////
+// Ta-Vatar's turn to talk
+targetget ("cam_loc_tavatar", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar", tgt)
+viewsettarget (tgt)
+
+wait (1000)
+
+targetget ("cam_loc_tavatar_2", tgt)
+viewmoveloc (tgt)
+targetget ("cam_tgt_tavatar_2", tgt)
+viewmovetarget (tgt)
+
+// initialize ta-vatar's dialog
+dialog dlg_2 ("Textures\Misc\purple_box.tga", 0.0171875, 0.385416667, 0.4703125, 0.833333333)
+
+dialogsetfont (dlg_2, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_2, 232, 197, 237)
+
+// display ta-vatar's portrait
+image img_3 ("Textures\Portraits\TaVatar_port.jpg", 0.13125, 0.0875, 0.3296875, 0.352083333, 255, 255, 255, 255)
+
+imagesetstatus (img_3, 1)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "NEVER!")
+waitbtn (1000)
+
+dialogsettext (dlg_2, "Never! ever! evER! EVER!")
+waitbtn (3000)
+
+dialogsettext (dlg_2, "You chose to hate your own kind! For this you will share the doomed fate of the Fungi Colony!")
+waitbtn (4000)
+
+dialogsettext (dlg_2, "Let us go my fellow Ta-Tas! We must put an end to this Fungi Infestation once and for all!")
+waitbtn (4000)
+
+imagesetstatus (img_3, 2)
+dialogopen (dlg_2, 0)
+
+wait (1000)
+
+// ////////////////////////////////////////////////
+// Return to Corrupta
+targetget ("cam_loc_corrupta", tgt)
+viewsetloc (tgt)
+targetget ("intro_tgt_4", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "HAHAHA! I don't think so!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "You pathetic Ta-Tas have no idea how powerful I am!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Let me show you my powers, Ta-Vatar!")
+waitbtn (2000)
+
+// ///////////////////////////////////////
+// CAST LIGHTNING!!!
+entitysetobjstate ("big_boss", 6)
+
+dialogsettext (dlg_1, "ULTATA-MUHATA!!! DA-UM-TATA!! BRUTA!!!")
+waitbtn (2000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+
+entitysetobjstate ("big_boss", 3)
+wait (490)
+entitysetobjstate ("big_boss", 4)
+wait (990)
+entitysetobjstate ("big_boss", 2)
+
+wait (1000)
+
+targetget ("cam_loc_lightning", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_lightning", tgt)
+viewsettarget (tgt)
+
+wait (500)
+
+targetget ("cam_loc_lightning_2", tgt)
+viewmoveloc (tgt)
+targetget ("cam_tgt_lightning", tgt)
+viewmovetarget (tgt)
+
+wait (1000)
+
+objectactivate ("lightning_death_strike", 1)
+
+wait (1000)
+
+entitypolldeath ("lightning_death_strike")
+
+// kill all tatas except tavatar
+creaturehit ("CaptainTaTa", 3)
+creaturehit ("TaTaTug", 3)
+creaturehit ("TinkerTa", 3)
+creaturehit ("TaTaTrample", 3)
+creaturehit ("HopTaHop", 3)
+creaturehit ("LoopTaLoop", 3)
+creaturehit ("FrostTa", 3)
+creaturehit ("ParaTaTa", 3)
+creaturehit ("ChiTa", 3)
+creaturehit ("KeyKeyTa", 3)
+
+wait (1000)
+
+// Tavatar is shocked!
+imagesetstatus (img_3, 1)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "NOOOOOOO!")
+waitbtn (2000)
+
+dialogsettext (dlg_2, "I...")
+waitbtn (1000)
+
+dialogsettext (dlg_2, "...")
+waitbtn (1000)
+
+dialogsettext (dlg_2, "HATE YOU!!!!!!")
+waitbtn (2000)
+
+imagesetstatus (img_3, 2)
+dialogopen (dlg_2, 0)
+
+wait (1000)
+
+// ////////////////////////////////////////////////
+// Return to Corrupta
+targetget ("cam_loc_corrupta", tgt)
+viewsetloc (tgt)
+targetget ("intro_tgt_4", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "HAHAHA! Now you are beginning to feel true power!")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Go on!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "HATE ME AS MUCH AS YOU CAN!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "GO AHEAD AND STOP ME IF YOU CAN!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "HAHAHAHAHAHAHAHA!")
+waitbtn (1000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+
+wait (1000)
+
+entitysetbehavior ("big_boss", 2)
+
+objectactivate ("field_lightning_1", 1)
+objectactivate ("field_lightning_2", 1)
+objectactivate ("field_lightning_3", 1)
+objectactivate ("field_lightning_4", 1)
+
+[intro_end]
+
+[scene_tatamahatta_begin]
+
+// vector3 tgt
+// targetget ("cam_loc_corrupta", tgt)
+// viewmoveloc (tgt)
+// targetget ("intro_tgt_4", tgt)
+// viewmovetarget (tgt)
+
+wait (1000)
+
+mapload ("Maps\swamp_2_final.bsp", "none", 0, 0)
+
+[scene_tatamahatta_end]

@@ -1,0 +1,4 @@
+delay=1
+numStates=2
+s=0 e=3 d=5000
+s=4 e=18 d=2000

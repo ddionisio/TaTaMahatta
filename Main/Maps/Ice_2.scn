@@ -1,0 +1,151 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// 
+// Scenes
+// 
+[scene_lever_1_begin]
+vector3 tgt
+
+targetget ("cam_loc_gate", tgt)
+viewmoveloc (tgt)
+
+targetget ("cam_tgt_gate", tgt)
+viewmovetarget (tgt)
+
+wait (500)
+
+objectactivate ("platform_3", 1)
+
+wait (3000)
+[scene_lever_1_end]
+
+// 
+// Levers
+// 
+
+[lever_1_begin]
+// show what the lever activates
+setworldscene ("scene_lever_1")
+[lever_1_end]
+
+[lever_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_9", isActive)
+platformiswpbackward ("platform_9", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_9", 0)
+	objectactivate ("platform_9", 1)
+}
+else
+{
+	platformwpbackward ("platform_9", 1)
+}
+[lever_2_end]
+
+[lever_3_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_10", isActive)
+platformiswpbackward ("platform_10", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_10", 0)
+	objectactivate ("platform_10", 1)
+}
+else
+{
+	platformwpbackward ("platform_10", 1)
+}
+[lever_3_end]
+
+
+// 
+// Buttons
+// 
+
+[button_1_begin]
+objectactivate ("platform_1", 1)
+[button_1_end]
+
+[button_2_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_2", isActive)
+platformiswpbackward ("platform_2", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_2", 0)
+	objectactivate ("platform_2", 1)
+}
+else
+{
+	platformwpbackward ("platform_2", 1)
+}
+[button_2_end]
+
+[button_3_1_begin]
+objectactivate ("platform_4", 1)
+[button_3_1_end]
+
+[button_3_2_begin]
+objectactivate ("platform_5", 1)
+[button_3_2_end]
+
+[button_3_3_begin]
+objectactivate ("platform_6", 1)
+[button_3_3_end]
+
+[button_3_4_begin]
+objectactivate ("platform_7", 1)
+[button_3_4_end]
+
+
+[button_4_begin]
+int isBackward
+int isActive
+
+objectisactive ("platform_8", isActive)
+platformiswpbackward ("platform_8", isBackward)
+
+if (isBackward == 1 || isActive == 0)
+{
+	platformwpbackward ("platform_8", 0)
+	objectactivate ("platform_8", 1)
+}
+else
+{
+	platformwpbackward ("platform_8", 1)
+}
+[button_4_end]
+
+[button_5_begin]
+objectactivate ("platform_11", 1)
+[button_5_end]
+
+[button_6_begin]
+objectactivate ("platform_12", 1)
+[button_6_end]
+
+[gas_tele_1_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt")
+[gas_tele_1_end]
+
+[gas_tele_2_begin]
+string entity
+triggergetentity (entity)
+creatureteleport (entity, "fall_respawn_tgt_2")
+[gas_tele_2_end]

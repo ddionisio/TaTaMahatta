@@ -1,0 +1,10 @@
+[Box01]
+{
+textureimg_1="sunshine_txt_shiny.jpg";
+texture_1_11=65536
+}
+[sunshine]
+{
+textureimg_0="sunshine_txt_shiny.jpg";
+texture_0_11=65536
+}

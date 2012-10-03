@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{330814ca-d586-4060-8059-0cba4b07a148}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{eed0f837-12cb-40d5-b943-adbf4225ddb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Procs">
+      <UniqueIdentifier>{1a67d8e7-005b-4259-bc13-69f5c078aae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces">
+      <UniqueIdentifier>{765e6a58-71db-4ca5-8524-34bd8b95afe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\world">
+      <UniqueIdentifier>{c1324da0-58bb-47e2-a9c8-55824b4bcc38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\world\load">
+      <UniqueIdentifier>{7ad24dd5-9a95-43d3-84c3-8d5929e31657}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\creature">
+      <UniqueIdentifier>{15087953-f8de-47f4-aec4-a8e66c60d063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\creature\Ta-Ta">
+      <UniqueIdentifier>{ed4c5026-eec1-407d-b073-d8b0d5dd16d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\creature\Enemy">
+      <UniqueIdentifier>{6bd7f241-bece-4eee-b116-03762aa43c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\object %28level objects%29">
+      <UniqueIdentifier>{498df031-82cd-4cf7-ad35-b071d8c932db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\projectiles">
+      <UniqueIdentifier>{64b77c65-3957-4793-b66b-351f2d2fb99d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interfaces\item">
+      <UniqueIdentifier>{139e4313-d424-41fd-aa7e-5d6218db1ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Script Source">
+      <UniqueIdentifier>{d7c7a618-c088-448d-84ec-bdc47619b9c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu">
+      <UniqueIdentifier>{27dc6321-bf33-4cf0-95a9-a7fae5423d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu\Menu Item">
+      <UniqueIdentifier>{8ab34cb0-cb52-4a72-9563-189330b66319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu\Menu Callbacks">
+      <UniqueIdentifier>{f7cd636d-b3b2-4a77-ac8b-c3b31fdc4e59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu\Menu Callbacks\tutorial">
+      <UniqueIdentifier>{7e616b01-e0c4-462b-b170-373659288fdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Menu\Menu Callbacks\options">
+      <UniqueIdentifier>{99197520-91ef-4883-8cb4-f3c5a55f6898}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{36b81563-6f9f-4c7e-8cda-1983806d0809}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Menu Header">
+      <UniqueIdentifier>{83e62934-2b8a-44c6-8182-633c9043a4fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Creature Header">
+      <UniqueIdentifier>{341aee0b-1b88-4c28-8ac1-07d6e51a9785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{9ccb1bac-a09d-4ffa-8840-20743b058361}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\mywin.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_destroy.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_init.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_main.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_tool.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\proc_credits.cpp">
+      <Filter>Source Files\Procs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\proc_game.cpp">
+      <Filter>Source Files\Procs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\proc_intro.cpp">
+      <Filter>Source Files\Procs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_basic.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_bound.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_collision.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_error.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_ID.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_input.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_proc.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_sound.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_stage_select.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_view.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_waypoint.cpp">
+      <Filter>Source Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_ambientSound.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_cutscene.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_display.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_HUD.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_music.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_profile.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_target.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_update.cpp">
+      <Filter>Source Files\Interfaces\world</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_block.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_button.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_enemy.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_gas.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_item.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_lever.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_light.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_misc.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_platform.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_sign.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_start.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_steak.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_tata.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_trigger.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_world_load_entity_waypoint.cpp">
+      <Filter>Source Files\Interfaces\world\load</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_creature.cpp">
+      <Filter>Source Files\Interfaces\creature</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_creature_status.cpp">
+      <Filter>Source Files\Interfaces\creature</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_BabyTaTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_CaptainTaTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_ChiTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_FrostTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_HopTaHop.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_KeyKeyTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_LoopTaLoop.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_ParaTaTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_TaTaTrample.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_TaTaTug.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_TaVatar.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_TinkerTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Ta-Ta</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\boss_CatterShroom.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\boss_CorrupTa.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\boss_ShroomPa.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_FungaBark.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_FungaMusketeer.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_FungaSmug.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_FungaSpy.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_ShroomGuard.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\creature_ShroomShooter.cpp">
+      <Filter>Source Files\Interfaces\creature\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_block.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_button.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_doodad.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_geyser.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_goal.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_lever.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_lightningarea.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_ouchfield.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_platform.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_sign.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_steak.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_teleport.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_trigger.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\object_turret.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_object.cpp">
+      <Filter>Source Files\Interfaces\object %28level objects%29</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_attackmelee.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_frost.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_gas.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_openmelee.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_pullpower.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_pushmelee.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_scanner.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_spike.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_spit.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_teleport.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_usemelee.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\projectile_whip.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_projectile.cpp">
+      <Filter>Source Files\Interfaces\projectiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_item.cpp">
+      <Filter>Source Files\Interfaces\item</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_creature.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_dialog.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_entity.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_image.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_object.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_target.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_tata.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_vector.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_view.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\script_world.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_script_query.cpp">
+      <Filter>Source Files\Script Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_menu.cpp">
+      <Filter>Source Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_menu_cursor.cpp">
+      <Filter>Source Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_menu_game.cpp">
+      <Filter>Source Files\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_item_button2D.cpp">
+      <Filter>Source Files\Menu\Menu Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_item_button3D.cpp">
+      <Filter>Source Files\Menu\Menu Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_item_buttonText.cpp">
+      <Filter>Source Files\Menu\Menu Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tata_menu_item.cpp">
+      <Filter>Source Files\Menu\Menu Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_exit.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_gameover.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_jstick_cfg.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_kb_cfg.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_levelselect.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_levelstart.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_load.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_mainmenu.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_new.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_pause.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_pause_ingame.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_victory.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_playtutorial.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks\tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_options.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks\options</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_options_audio.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks\options</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_options_gfx.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks\options</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\menu_callback_options_input.cpp">
+      <Filter>Source Files\Menu\Menu Callbacks\options</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\bass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="david tools\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mywin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_bound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_collision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_entityparse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_ID.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_object_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_projectiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_projectiles_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_script.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_stage_select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_waypoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_world.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_menu.h">
+      <Filter>Header Files\Menu Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_menu_cursor.h">
+      <Filter>Header Files\Menu Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_menu_game.h">
+      <Filter>Header Files\Menu Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_menu_item.h">
+      <Filter>Header Files\Menu Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_menu_item_common.h">
+      <Filter>Header Files\Menu Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_menu_options.h">
+      <Filter>Header Files\Menu Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_creature.h">
+      <Filter>Header Files\Creature Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_creature_enemy.h">
+      <Filter>Header Files\Creature Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_creature_status.h">
+      <Filter>Header Files\Creature Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tata_creature_tata.h">
+      <Filter>Header Files\Creature Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="bass.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\tata_win_resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\tataicon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

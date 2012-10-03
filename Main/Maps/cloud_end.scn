@@ -1,0 +1,222 @@
+// /////////////////////////////////////////
+// NOTE: THIS IS NOT A README FILE!!!
+// THIS IS THE SCRIPT FILE USED BY THE GAME
+// SO IT'S YOUR FAULT IF YOU MODIFY ANYTHING
+// IN THIS FILE!!!
+
+// *****************************************
+// Intro Script
+// *****************************************
+[Intro_begin]
+// set all tatas to victory stance
+entitysetobjstate ("CaptainTaTa", 8)
+entitysetobjstate ("TaTaTug", 8)
+entitysetobjstate ("TinkerTa", 8)
+entitysetobjstate ("TaTaTrample", 8)
+entitysetobjstate ("HopTaHop", 8)
+entitysetobjstate ("LoopTaLoop", 8)
+entitysetobjstate ("FrostTa", 8)
+entitysetobjstate ("ParaTaTa", 8)
+entitysetobjstate ("ChiTa", 8)
+entitysetobjstate ("KeyKeyTa", 8)
+
+
+vector3 tgt
+
+targetget ("cam_loc_tavatar", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar", tgt)
+viewsettarget (tgt)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.4078125, 0.402083333, 0.9703125, 0.8375)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 232, 197, 237)
+
+// display tavatar's portrait
+image img_1 ("Textures\Portraits\TaVatar_port.jpg", 0.584375, 0.116666667, 0.7828125, 0.38125, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// Hurray
+
+dialogsettext (dlg_1, "I have defeated Corrup-Ta!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+// initialize 'yatta' dialog
+dialog dlg_2 ("Textures\Misc\purple_box.tga", 0.2203125, 0.814583333, 0.734375, 0.96875)
+
+dialogsetfont (dlg_2, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_2, 232, 197, 237)
+
+// YATTA! YATTA!
+targetget ("cam_loc_ta_1", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_ta_1", tgt)
+viewsettarget (tgt)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "YAT-TA! YAT-TA!")
+waitbtn (3000)
+
+dialogopen (dlg_2, 0)
+wait (1000)
+
+// get back to tavatar
+
+targetget ("cam_loc_tavatar", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_1, 1)
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "I have cleanse the land of the Fungi Infestation!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+// YATTA! YATTA!
+targetget ("cam_loc_ta_2", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_ta_2", tgt)
+viewsettarget (tgt)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "YAT-TA! YAT-TA!")
+waitbtn (3000)
+
+dialogopen (dlg_2, 0)
+wait (1000)
+
+// get back to tavatar
+
+targetget ("cam_loc_tavatar", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_1, 1)
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "The land of Ta has regain its harmonic flow of happiness!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+// YATTA! YATTA!
+targetget ("cam_loc_ta_3", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_ta_3", tgt)
+viewsettarget (tgt)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "YAT-TA! YAT-TA!")
+waitbtn (3000)
+
+dialogopen (dlg_2, 0)
+wait (1000)
+
+// get back to tavatar
+
+targetget ("cam_loc_tavatar", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_1, 1)
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "We can live again in the land of Ta without the fear of the Fungi Colony!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+// YATTA! YATTA!
+targetget ("cam_loc_ta_4", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_ta_4", tgt)
+viewsettarget (tgt)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "YAT-TA! YAT-TA!")
+waitbtn (3000)
+
+dialogopen (dlg_2, 0)
+wait (1000)
+
+// get back to tavatar
+
+targetget ("cam_loc_tavatar", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_1, 1)
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "I have nothing else to say...")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+// YATTA! YATTA!
+targetget ("cam_loc_ta_5", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_ta_5", tgt)
+viewsettarget (tgt)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "YAT-TA! YAT-TA!")
+waitbtn (3000)
+
+dialogopen (dlg_2, 0)
+wait (1000)
+
+// get back to tavatar
+
+targetget ("cam_loc_tavatar", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_1, 1)
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "So anyway...")
+waitbtn (2000)
+
+// victory stance
+entitysetobjstate ("TaVatar", 8)
+
+dialogsettext (dlg_1, "LET'S PARTY!!!")
+waitbtn (2000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+loadcreditsscene (1)
+[Intro_end]

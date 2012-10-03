@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InputX", "david tools\InputX\InputX.vcxproj", "{249D3E33-E25A-4BA1-B640-3ECEB22A51D2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parser", "david tools\Parser\Parser.vcxproj", "{55B32387-0EDA-4B7C-B21B-FB4A3379577E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScriptTease", "david tools\ScriptTease\ScriptTease.vcxproj", "{1A79BE5C-D09B-4175-AED9-B2A59178480B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TATA_MAHATTA", "TATA_MAHATTA.vcxproj", "{EDFD00E4-86F0-4150-B2DA-285792BD92B3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "graphicsX", "david tools\graphicsX\graphicsX.vcxproj", "{52EFF7EC-D89A-4A05-A15F-C7C080294950}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "timer", "david tools\TIMER\timer.vcxproj", "{470DA1B2-D3F0-4E3D-B4BA-7812C1180CA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{249D3E33-E25A-4BA1-B640-3ECEB22A51D2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{249D3E33-E25A-4BA1-B640-3ECEB22A51D2}.Debug|Win32.Build.0 = Debug|Win32
+		{249D3E33-E25A-4BA1-B640-3ECEB22A51D2}.Release|Win32.ActiveCfg = Release|Win32
+		{249D3E33-E25A-4BA1-B640-3ECEB22A51D2}.Release|Win32.Build.0 = Release|Win32
+		{55B32387-0EDA-4B7C-B21B-FB4A3379577E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55B32387-0EDA-4B7C-B21B-FB4A3379577E}.Debug|Win32.Build.0 = Debug|Win32
+		{55B32387-0EDA-4B7C-B21B-FB4A3379577E}.Release|Win32.ActiveCfg = Release|Win32
+		{55B32387-0EDA-4B7C-B21B-FB4A3379577E}.Release|Win32.Build.0 = Release|Win32
+		{1A79BE5C-D09B-4175-AED9-B2A59178480B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1A79BE5C-D09B-4175-AED9-B2A59178480B}.Debug|Win32.Build.0 = Debug|Win32
+		{1A79BE5C-D09B-4175-AED9-B2A59178480B}.Release|Win32.ActiveCfg = Release|Win32
+		{1A79BE5C-D09B-4175-AED9-B2A59178480B}.Release|Win32.Build.0 = Release|Win32
+		{EDFD00E4-86F0-4150-B2DA-285792BD92B3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EDFD00E4-86F0-4150-B2DA-285792BD92B3}.Debug|Win32.Build.0 = Debug|Win32
+		{EDFD00E4-86F0-4150-B2DA-285792BD92B3}.Release|Win32.ActiveCfg = Release|Win32
+		{EDFD00E4-86F0-4150-B2DA-285792BD92B3}.Release|Win32.Build.0 = Release|Win32
+		{52EFF7EC-D89A-4A05-A15F-C7C080294950}.Debug|Win32.ActiveCfg = Debug|Win32
+		{52EFF7EC-D89A-4A05-A15F-C7C080294950}.Debug|Win32.Build.0 = Debug|Win32
+		{52EFF7EC-D89A-4A05-A15F-C7C080294950}.Release|Win32.ActiveCfg = Release|Win32
+		{52EFF7EC-D89A-4A05-A15F-C7C080294950}.Release|Win32.Build.0 = Release|Win32
+		{470DA1B2-D3F0-4E3D-B4BA-7812C1180CA1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{470DA1B2-D3F0-4E3D-B4BA-7812C1180CA1}.Debug|Win32.Build.0 = Debug|Win32
+		{470DA1B2-D3F0-4E3D-B4BA-7812C1180CA1}.Release|Win32.ActiveCfg = Release|Win32
+		{470DA1B2-D3F0-4E3D-B4BA-7812C1180CA1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,173 @@
+[happy_btn_1_begin]
+objectactivate ("happiness_1", 1)
+[happy_btn_1_end]
+
+[happy_btn_2_begin]
+objectactivate ("happiness_2", 1)
+[happy_btn_2_end]
+
+[happy_btn_3_begin]
+objectactivate ("happiness_3", 1)
+[happy_btn_3_end]
+
+[happy_btn_4_begin]
+objectactivate ("happiness_4", 1)
+[happy_btn_4_end]
+
+// /////////////////////////////////////////////////////
+// Scene
+
+[intro_begin]
+
+// set camera to corrupta
+vector3 tgt
+
+targetget ("cam_loc_corrupta", tgt)
+viewsetloc (tgt)
+targetget ("intro_tgt_4", tgt)
+viewsettarget (tgt)
+
+// initialize primary dialog
+dialog dlg_1 ("Textures\Misc\purple_box.tga", 0.30625, 0.422916667, 0.9453125, 0.90625)
+
+dialogsetfont (dlg_1, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_1, 127, 255, 127)
+
+// display corrupta's portrait
+image img_1 ("Textures\Portraits\CorrupTa_port.tga", 0.3265625, 0.020833333, 0.925, 0.41875, 255, 255, 255, 255)
+
+imagesetstatus (img_1, 1)
+
+dialogopen (dlg_1, 1)
+
+// ////////////////////////////////////////
+// CorrupTa is pissed
+
+dialogsettext (dlg_1, "So you managed to destroy my force field...")
+waitbtn (3000)
+
+dialogsettext (dlg_1, "Big deal!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "I have yet to unleash my true powers!")
+waitbtn (3000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+// ////////////////////////////////////////////////
+// confident Ta-Vatar
+
+targetget ("cam_loc_tavatar_2", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar_2", tgt)
+viewsettarget (tgt)
+
+// initialize ta-vatar's dialog
+dialog dlg_2 ("Textures\Misc\purple_box.tga", 0.0171875, 0.385416667, 0.4703125, 0.833333333)
+
+dialogsetfont (dlg_2, "Comic Sans MS", 0.025, 0)
+dialogsettextclr (dlg_2, 232, 197, 237)
+
+// display ta-vatar's portrait
+image img_3 ("Textures\Portraits\TaVatar_port.jpg", 0.13125, 0.0875, 0.3296875, 0.352083333, 255, 255, 255, 255)
+
+imagesetstatus (img_3, 1)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "No, I will end this now! You will be cleansed by my Ta-Ta Mahatta powers!")
+waitbtn (3000)
+
+dialogsettext (dlg_2, "I will defeat you, as the great White Ta-Ta that I am!")
+waitbtn (3000)
+
+// get back to corrupta
+imagesetstatus (img_3, 2)
+dialogopen (dlg_2, 0)
+wait (1000)
+
+targetget ("cam_loc_corrupta", tgt)
+viewmoveloc (tgt)
+targetget ("intro_tgt_4", tgt)
+viewmovetarget (tgt)
+
+// /////////////////////////////////////////
+// now, show the true tata-mahatta
+imagesetstatus (img_1, 1)
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "Foolish Ta-Ta!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "You are not the only one who holds the power of Ta-Ta Mahatta!")
+waitbtn (4000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+// /////////////////////////////////////
+// unacceptable, for tavatar
+targetget ("cam_loc_tavatar_2", tgt)
+viewsetloc (tgt)
+targetget ("cam_tgt_tavatar_2", tgt)
+viewsettarget (tgt)
+
+imagesetstatus (img_3, 1)
+
+dialogopen (dlg_2, 1)
+
+dialogsettext (dlg_2, "LIES! I am the only one who holds the power of Ta-Ta Mahatta!")
+waitbtn (2000)
+
+// ///////////////////////
+// get back to corrupta
+imagesetstatus (img_3, 2)
+dialogopen (dlg_2, 0)
+wait (1000)
+
+targetget ("cam_loc_corrupta", tgt)
+viewsetloc (tgt)
+targetget ("intro_tgt_4", tgt)
+viewsettarget (tgt)
+
+// ////////////////////////
+// TATA-MAHATTA!
+imagesetstatus (img_1, 1)
+dialogopen (dlg_1, 1)
+
+dialogsettext (dlg_1, "We will see about that!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "HAHAHA! I'll show you the true power of 'Ta-Ta Mahatta'! HAHAHAHA!")
+waitbtn (2000)
+
+dialogsettext (dlg_1, "TA-TA MAHATTA!")
+waitbtn (1000)
+
+imagesetstatus (img_1, 2)
+dialogopen (dlg_1, 0)
+wait (1000)
+
+targetget ("cam_loc_tatamahatta", tgt)
+viewmoveloc (tgt)
+targetget ("cam_tgt_tatamahatta", tgt)
+viewmovetarget (tgt)
+
+wait (1000)
+
+// set music to final boss
+worldsetmusic ("Music\TTM_Final_Boss.mp3")
+
+entitysetbehavior ("big_boss", 4)
+entitypolldeath ("throne")
+
+wait (2500)
+
+[intro_end]
+
+[ending_begin]
+mapload ("Maps\cloud_end.bsp", "none", 0, 0)
+[ending_end]

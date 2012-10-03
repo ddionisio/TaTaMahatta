@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ScriptTease - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP346.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/ScriptTease.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Ta-Ta Mahatta\david tools\ScriptTease\script.cpp"
+"C:\Ta-Ta Mahatta\david tools\ScriptTease\script_line.cpp"
+"C:\Ta-Ta Mahatta\david tools\ScriptTease\script_parse.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP346.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP347.tmp" with contents
+[
+/nologo /out:"Debug\ScriptTease.lib" 
+".\Debug\cfg.obj"
+".\Debug\script_var_file.obj"
+".\Debug\script_var_float.obj"
+".\Debug\script_var_int.obj"
+".\Debug\script_var_string.obj"
+".\Debug\script_func_file.obj"
+".\Debug\script_func_float.obj"
+".\Debug\script_func_integer.obj"
+".\Debug\script_func_string.obj"
+".\Debug\script.obj"
+".\Debug\script_basics.obj"
+".\Debug\script_condition.obj"
+".\Debug\script_function.obj"
+".\Debug\script_line.obj"
+".\Debug\script_param.obj"
+".\Debug\script_parse.obj"
+".\Debug\script_variable.obj"
+".\Debug\scriptTease.obj"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP347.tmp"
+<h3>Output Window</h3>
+Compiling...
+script.cpp
+script_line.cpp
+script_parse.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+ScriptTease.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
