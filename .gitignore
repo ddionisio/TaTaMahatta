@@ -12,5 +12,5 @@
 /david tools/Parser/Debug
 /david tools/ScriptTease/Debug
 /david tools/ScriptTease/Release
-/TATA_MAHATTA.vcproj.ddionisio-PC.ddionisio.user
+*.user
 *.old
