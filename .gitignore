@@ -12,5 +12,7 @@
 /david tools/Parser/Debug
 /david tools/ScriptTease/Debug
 /david tools/ScriptTease/Release
+/david tools/TIMER/Debug
+/david tools/TIMER/Release
 *.user
 *.old
