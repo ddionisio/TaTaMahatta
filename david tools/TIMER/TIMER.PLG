@@ -1,0 +1,29 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: timer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC4.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_MBCS" /D "_LIB" /Fp"Debug/timer.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Ta-Ta Mahatta\david tools\timer\w32Timer.cpp"
+"C:\Ta-Ta Mahatta\david tools\timer\w32TimerFPS.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC4.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Debug\timer.lib"  ".\Debug\w32Timer.obj" ".\Debug\w32TimerFPS.obj" "
+<h3>Output Window</h3>
+Compiling...
+w32Timer.cpp
+w32TimerFPS.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+timer.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
